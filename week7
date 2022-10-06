@@ -1,0 +1,3 @@
+git clone https://github.com/yk539/yk539.github.io
+cd yk539.github.io
+echo "Hello World" > index.html
