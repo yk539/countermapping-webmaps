@@ -1,0 +1,100 @@
+index1.html
+<!-- This is to indicate we have an HTML document -->
+<!DOCTYPE html>
+
+<!-- All our code goes within this tag-->
+<html>
+
+<!-- All the metadata and packages/tools we'll use go in here-->
+<head>
+
+<!-- The charset attribute specifies the character encoding for the HTML document.-->
+<meta charset="utf-8" />
+
+<!-- The title of your page, which will appear in the browser tab -->
+<title>NYC Housing Flood Risk</title>  
+
+<!-- The size of the viewport vs the rendered page -->
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+<!-- We are going to call the Mapbox GL javascript library, which will allow us to use its functionality -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+
+<!-- Alongside this, we are going to bring in the Mapbox GL stylesheet -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+<!-- You'll be creating this file in a bit -->
+<link href='style.css' rel='stylesheet' />
+
+<!-- This allows us to bring in new fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<!-- The body contains the actual content of a page -->
+<body>
+
+<!-- The "div" tag delineates a "division" or section of the HTML page.-->
+  <div id="map">
+  </div>
+
+
+  	<div class="map-overlay top">
+  	<div class="map-overlay-inner">
+  	<h2>Public and Affordable Housing Flood Risk</h2>
+    From late October to early November of 2012, New York was hit by Superstorm Sandy. This influence has had a wide-ranging impact on the lives of many citizens. This post sought to examine how Sandy affected public and affordable housing in New York City. First, blue part was based on Sandy Inundation Zone data released in 2015 by the NYC Department of Small Business Services (SBS). This information comes from areas of New York City that were flooded by Hurricane Sandy.Second, the orange part is public housing projetcs in NYC. The second source is the New York City Housing Authority as of June 2022. The New York City Housing Authority (NYCHA) first distributed it in 2013.
+    This will not only allow us to assess the impact of Sandy, but it will also allow us to plan ahead by determining which public and affordable housing developments, such as those in lower Manhattan and the Red Hook, will be adversely affected by flooding.
+  	</div>
+  	</div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA'
+
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/yk539/cl9087w3q001715o9ht59h3le',
+  center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+  zoom: 12 // The zoom level can be any decimal number 
+});
+map.on('load',function(){
+  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
+  map.addSource('sandy_layer',{
+    'type':'vector',
+    'url': 'mapbox://yk539.6gmn2j3w'
+  });
+  // add a new layer with your polygons
+map.addLayer({
+    'id':'flood_zones',
+    'type':'fill',
+    'source':'sandy_layer',
+    'source-layer':'Sandy_Inundation_Zone-c7yege',
+    'paint':{
+      'fill-color':'#00158f',
+      'fill-opacity': '0.5'
+    }
+  })  
+});
+
+map.on('load',function(){
+  // Give your layer's source a nickname you'll remember easily.
+  map.addSource('NYCHA_layer',{
+    'type':'vector',
+    'url': 'mapbox://yk539.7lmvgegg'
+  });
+  // add a new layer with your polygons
+map.addLayer({
+    'id':'public housing developments',
+    'type':'fill',
+    'source':'NYCHA_layer',
+    'source-layer':'Map_of_NYCHA_Devlopments-6muymk',
+    'paint':{
+      'fill-color':'#f38744',
+      'fill-opacity': '0.5'
+    }
+  })  
+});
+// Within a script, you comment using two backslashes.
+</script>
+
+</body>
+
+</html>
