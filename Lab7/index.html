@@ -46,29 +46,31 @@ index.html
   	</div>
 
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w4eDVtOGc0MDNhbjN3cXZjdXRhY3B5bCJ9.1eD6XS-plfopfeagvx9CRw'
+mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA'
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/yk539/cl8ywpgxx00c615qldwt4mjyz' 
+  style: 'mapbox://styles/yk539/cl8ywpgxx00c615qldwt4mjyz',
+  center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+  zoom: 12 // The zoom level can be any decimal number 
 });
 map.on('load',function(){
   // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
   map.addSource('sandy_layer',{
     'type':'vector',
-    'url': 'mapbox://yk539.9y8ukke2'
+    'url': 'mapbox://yk539.6gmn2j3w'
   });
   // add a new layer with your polygons
 map.addLayer({
     'id':'flood_zones',
     'type':'fill',
     'source':'sandy_layer',
-    'source-layer':'Sandy_Inundation_Zone-c54471',
+    'source-layer':'Sandy_Inundation_Zone-c7yege',
     'paint':{
       'fill-color':'#00158f',
       'fill-opacity': '0.5'
     }
-  })
+  })  
 });
 // Within a script, you comment using two backslashes.
 </script>
