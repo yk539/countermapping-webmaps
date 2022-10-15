@@ -1,0 +1,41 @@
+style.css
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%; }
+.map-overlay {
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.map-overlay-inner {
+  padding: 30px;
+  /*margin-bottom: 10px;*/
+}
+
+.map-overlay h2 {
+line-height: 24px;
+display: block;
+margin: 0 0 10px;
+}
+.mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Montserrat Neue',sans-serif;
+}
+
+.check-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
