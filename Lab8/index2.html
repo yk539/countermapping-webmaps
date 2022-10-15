@@ -1,0 +1,259 @@
+index.html
+<!-- This is to indicate we have an HTML document -->
+<!DOCTYPE html>
+
+<!-- All our code goes within this tag-->
+<html>
+
+<!-- All the metadata and packages/tools we'll use go in here-->
+<head>
+
+<!-- The charset attribute specifies the character encoding for the HTML document.-->
+<meta charset="utf-8" />
+
+<!-- The title of your page, which will appear in the browser tab -->
+<title>NYC Housing Flood Risk</title>
+
+<!-- The size of the viewport vs the rendered page -->
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+<!-- We are going to call the Mapbox GL javascript library, which will allow us to use its functionality -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+
+<!-- Alongside this, we are going to bring in the Mapbox GL stylesheet -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+<link href='style.css' rel='stylesheet' />
+<!-- This allows us to bring in new fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<!-- The body contains the actual content of a page -->
+<body>
+<!-- The "div" tag delineates a "division" or section of the HTML page.-->
+  <div id="map"></div>
+	<div class="map-overlay">
+	<div class="map-overlay-inner">
+	<h2>Public and Affordable Housing Flood Risk</h2>
+  <p>In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = "https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page">without power for days or even weeks]</a>. New York City Housing Authority public housing developments were affected. <a href="https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf">24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected</a>.</p>
+  <p>With rising sea levels from climate change and the <a href="https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html">promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? 
+  </p>
+  <p>Flood Prediction </p><p>Ligh purple:2100|Mid purple:205|Dark purple:2020 </p>
+	<div id='menu'>
+  <label class='check-container'>
+      Sandy Inundation Zone 
+      <input id='floodZones' type='checkbox' name='viz-toggle' checked='checked'>
+    </label>
+  <label class='check-container'>
+      NYCHA Buildings
+      <input id='nychaBuildings' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+      +300 People Below Poverty Line
+      <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+</div>
+  </div>
+
+	</div>
+  <script>
+  // You'll be inserting your JS code to initialize your map here
+  mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA';
+  const map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/yk539/cl99do3t5003y14o6hht10688', // replace this with your style URL
+    center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+    zoom: 13,
+    // maxZoom: 22,
+    // minZoom: 12
+  });
+
+  map.on('load',function(){
+    // Give your layer's source a nickname you'll remember easily.
+    
+     map.addSource('censusLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.6nowkujs'
+    });
+
+    map.addSource('nychaLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.28ut4nij'
+    });
+   
+  map.addSource('sandyLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.bpjzmy2b'
+    });
+
+     map.addSource('sandyLayer2020-1',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.bbchggzx'
+    });
+
+      map.addSource('sandyLayer2020-2',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.05ogder8'
+    });    
+      map.addSource('sandyLayer2050-1',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.crrx4301'
+    });    
+   
+      map.addSource('sandyLayer2050-2',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.4ydk0450'
+    });    
+
+    map.addSource('sandyLayer2100-1',{
+    'type':'vector',
+    'url': 'mapbox://iamwfx.dxjuiivg'
+    });    
+
+    map.addSource('sandyLayer2100-2',{
+    'type':'vector',
+    'url': 'mapbox://iamwfx.8thgevrt'
+    });    
+
+
+
+
+
+   
+    // add a new layer with your polygons
+     map.addLayer({
+      'id':'povertyLevel',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
+      'paint':{
+       'fill-color':'#f5ef42',
+        'fill-opacity':['step',
+        ['get','AMR5E002'],
+        0,300,1
+        ]
+      },
+    }); 
+
+    map.addLayer({
+      'id':'nychaBuildings',
+      'type':'fill',
+      'source':'nychaLayer',
+      'source-layer':'Map_of_NYCHA_Developments-7i6vok',
+      'paint':{
+        'fill-color':'red',
+        'fill-opacity': 0.5
+      }
+    });
+
+ map.addLayer({
+      'id':'floodZones2020-1',
+      'type':'fill',
+      'source':'sandyLayer2020-1',
+      'source-layer':'FutureFloodplains_2020_100yr-du18hr',
+      'paint':{
+        'fill-color':'#361354',
+        'fill-opacity': 0.3
+      }
+     }); 
+  map.addLayer({
+      'id':'floodZones2020-2',
+      'type':'fill',
+      'source':'sandyLayer2020-2',
+      'source-layer':'FutureFloodplains_2020_500yr-0x77x0',
+      'paint':{
+        'fill-color':'#361354',
+        'fill-opacity': 0.3
+      }
+     });
+   map.addLayer({
+      'id':'floodZones2050-1',
+      'type':'fill',
+      'source':'sandyLayer2050-1',
+      'source-layer':'FutureFloodplains_2050_100yr-6nepei',
+      'paint':{
+        'fill-color':'#4A2160',
+        'fill-opacity': 0.3
+       }
+     });
+  map.addLayer({
+      'id':'floodZones2050-2',
+      'type':'fill',
+      'source':'sandyLayer2050-2',
+      'source-layer':'FutureFloodplains_2050_500yr-a4444h',
+      'paint':{
+        'fill-color':'#4A2160',
+        'fill-opacity': 0.3
+      }
+     });
+  map.addLayer({
+      'id':'floodZones2100-1',
+      'type':'fill',
+      'source':'sandyLayer2100-1',
+      'source-layer':'FutureFloodplains_2100_100yr-cqwfrw',
+      'paint':{
+        'fill-color':'#B294F2',
+        'fill-opacity': 0.3
+
+         }
+     });
+  map.addLayer({
+      'id':'floodZones2100-2',
+      'type':'fill',
+      'source':'sandyLayer2100-2',
+      'source-layer':'FutureFloodplains_2100_500yr-27ghpw',
+      'paint':{
+        'fill-color':'#B294F2',
+        'fill-opacity': 0.4
+
+
+      }
+    });
+   
+    map.addLayer({
+      'id':'floodZones',
+      'type':'fill',
+      'source':'sandyLayer',
+      'source-layer':'Sandy_Inundation_Zone-4qcajo',
+      'paint':{
+        'fill-color':'#00158f',
+        'fill-opacity': 0.5
+
+      }
+    });
+
+   
+
+
+    map.setLayoutProperty('floodZones',"visibility", "visible");    
+    map.setLayoutProperty('povertyLevel',"visibility", "visible");
+    map.setLayoutProperty('nychaBuildings',"visibility", "visible");
+
+
+    var layerList = document.getElementById("menu");
+    var checkboxes = layerList.getElementsByTagName("input");
+
+    function switchLayer(layer) {
+    var clickedLayersLabel = layer.target.id; // get the label of the layer cluster
+    var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function
+    var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); // check whether the cluster of layers is visible by checking the first entry
+    
+    if (visibility === "visible") {
+      map.setLayoutProperty(clickedLayersLabel, "visibility", "none")
+    } else {
+      map.setLayoutProperty(clickedLayersLabel, "visibility", "visible")
+    }
+
+}
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].onclick = switchLayer;
+}
+
+
+});
+   
+    
+
+  // Within a script, you comment using two backslashes.
+  </script>
+</body>
+
+</html>
