@@ -1,0 +1,370 @@
+index.html
+<!-- This is to indicate we have an HTML document -->
+<!DOCTYPE html>
+
+<!-- All our code goes within this tag-->
+<html>
+
+<!-- All the metadata and packages/tools we'll use go in here-->
+<head>
+
+<!-- The charset attribute specifies the character encoding for the HTML document.-->
+<meta charset='utf-8' />
+
+<!-- The title of your page, which will appear in the browser tab -->
+<title>NYC Housing Flood Risk</title>
+
+<!-- The size of the viewport vs the rendered page -->
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+<!-- We are going to call the Mapbox GL javascript library, which will allow us to use its functionality -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+
+<!-- Alongside this, we are going to bring in the Mapbox GL stylesheet -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+<link href='style.css' rel='stylesheet' />
+
+<!-- This allows us to bring in new fonts -->
+<link href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet'>
+</head>
+
+<!-- The body contains the actual content of a page -->
+<body>
+
+<!-- The 'div' tag delineates a 'division' or section of the HTML page.-->
+  <div id='map'></div>
+	<div class='map-overlay'>
+  	<div class='map-overlay-inner'>
+  	<h2>Public and Affordable Housing Flood Risk</h2>
+    <p>In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = 'https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page'>without power for days or even weeks]</a>. New York City Housing Authority public housing developments were affected. <a href='https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf'>24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected</a>.</p>
+
+    <p>With rising sea levels from climate change and the <a href='https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html'>promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? </p>
+
+      <div id='menu'>
+          <!-- <h3>Housing Type</h3> -->
+          <label class='check-container'>
+              Affordable Housing Types
+              <input id='affHousing' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>Co-Op
+              <span class="legend-key" style='background:#f72585'></span>
+          </label>
+          <label class='check-container'>Shelter
+              <span class="legend-key" style='background:#7209b7'></span>
+          </label>
+          <label class='check-container'>HPD subsized
+              <span class="legend-key" style='background:#3a0ca3'></span>
+          </label>
+          <label class='check-container'>Mobile Home
+              <span class="legend-key" style='background:#fdfcdc'></span>
+          </label>
+          <label class='check-container'>Public Housing
+              <span class="legend-key" style='background:#f07167'></span>
+          </label>
+          <label class='check-container'>Single-Residency Housing
+              <span class="legend-key" style='background:#adc178'></span>
+          </label>
+          <label class='check-container'>Other
+              <span class="legend-key" style='background:#472d30'></span>
+          </label>
+
+      <br>
+          <!-- <h3>Race and Socioeconomic Status</h3> -->
+          <label class='check-container'>
+              +300 People Below Poverty Line
+              <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <h3>Flood Risk Zones</h3>
+          <label class='check-container'>
+              2012 Sandy Inundation Zone
+              <input id='floodZones' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <br>
+          <b>Predicted Floodplains</b>
+          <label class='check-container'>
+              In 2020 (1 in 100 year flood)
+              <input id='f20_100' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>
+              In 2020 (1 in 500 year)
+              <input id='f20_500' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>
+              In 2050 (1 in 100 year)
+              <input id='f50_100' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>
+              In 2050 (1 in 500 year)
+              <input id='f50_500' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>
+              In 2100 (1 in 100 year)
+              <input id='f100_100' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+          <label class='check-container'>
+              In 2100 (1 in 500 year)
+              <input id='f100_500' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+
+        <!-- <label class='check-container'>
+            NYCHA Buildings
+            <input id='nychaBuildings' type='checkbox' name='viz-toggle' checked='checked'>
+        </label> -->
+
+      </div>
+
+  	</div>
+
+
+	</div>
+  <script>
+  // You'll be inserting your JS code to initialize your map here
+  mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA';
+  const map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/yk539/cl99do3t5003y14o6hht10688', // replace this with your style URL
+    center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+    zoom: 13,
+    // maxZoom: 22,
+    minZoom: 12
+  });
+
+    map.on('load',function(){
+      // Give your layer's source a nickname you'll remember easily.
+      map.addSource('sandyLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.bpjzmy2b'
+      });
+
+      map.addSource('censusLayer',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.6nowkujs'
+      });
+
+      map.addSource('paraffordLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.ab4g098q'
+      });
+
+      // Flood plains
+      map.addSource('FutureFloodplains_2020_100yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.bbchggzx'
+      });
+
+      map.addSource('FutureFloodplains_2020_500yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.05ogder8'
+      });
+
+      map.addSource('FutureFloodplains_2050_100yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.crrx4301'
+      });
+
+      map.addSource('FutureFloodplains_2050_500yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.4ydk0450'
+      });
+      map.addSource('FutureFloodplains_2100_100yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.dxjuiivg'
+      });
+
+      map.addSource('FutureFloodplains_2100_500yr',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.8thgevrt'
+      });
+
+
+      map.addLayer({
+        'id':'povertyLevel',
+        'type':'fill',
+        'source':'censusLayer',
+        'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
+        'paint':{
+        'fill-color':'#f5ef42',
+          'fill-opacity':
+           [
+          'step',
+            ['get','AMR5E002'],
+            0,300,.8
+            // .3,.9
+
+            ]
+          }
+        });
+
+      //
+      map.addLayer({
+      'id':'affHousing',
+      'type':'line',
+      'source':'paraffordLayer',
+      'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
+      'paint':{
+       'line-width':
+       ['interpolate',['linear'],['zoom'], 13, 2, 18, 10],
+       'line-color':
+       ['match', ['get','hous_type'],
+       'coop','#f72585',
+        'homeless', '#7209b7',
+       'hpd_sub','#3a0ca3',
+       'mob_home','#fdfcdc',
+       'pub_hou', '#f07167',
+       'sro', '#adc178', 
+       '#472d30'
+       ],
+       'line-opacity': 1
+        }
+       });
+
+
+      map.addLayer({
+        'id':'floodZones',
+        'type':'fill',
+        'source':'sandyLayer',
+        'source-layer':'Sandy_Inundation_Zone-4qcajo',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3,
+        }
+      });
+
+      map.addLayer({
+        'id':'f20_100',
+        'type':'fill',
+        'source':'FutureFloodplains_2020_100yr',
+        'source-layer':'FutureFloodplains_2020_100yr-du18hr',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+      map.addLayer({
+        'id':'f20_500',
+        'type':'fill',
+        'source':'FutureFloodplains_2020_500yr',
+        'source-layer':'FutureFloodplains_2020_500yr-0x77x0',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+      map.addLayer({
+        'id':'f50_100',
+        'type':'fill',
+        'source':'FutureFloodplains_2050_100yr',
+        'source-layer':'FutureFloodplains_2050_100yr-6nepei',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+      map.addLayer({
+        'id':'f50_500',
+        'type':'fill',
+        'source':'FutureFloodplains_2050_500yr',
+        'source-layer':'FutureFloodplains_2050_500yr-a4444h',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+      map.addLayer({
+        'id':'f100_100',
+        'type':'fill',
+        'source':'FutureFloodplains_2100_100yr',
+        'source-layer':'FutureFloodplains_2100_100yr-cqwfrw',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+      map.addLayer({
+        'id':'f100_500',
+        'type':'fill',
+        'source':'FutureFloodplains_2100_500yr',
+        'source-layer':'FutureFloodplains_2100_500yr-27ghpw',
+        'paint':{
+          'fill-color':'#00158f',
+          'fill-opacity': 0.3
+        }
+      });
+
+  // Explicitly set the visibility of each to be on or off.
+  // There are probably easier ways to do this../
+    map.setLayoutProperty('floodZones',"visibility", "visible");
+    map.setLayoutProperty('povertyLevel',"visibility", "visible");
+    // map.setLayoutProperty('nychaBuildings',"visibility", "visible");
+    map.setLayoutProperty('f20_100',"visibility", "visible");
+    map.setLayoutProperty('f20_500',"visibility", "visible");
+    map.setLayoutProperty('f50_100',"visibility", "visible");
+    map.setLayoutProperty('f50_500',"visibility", "visible");
+    map.setLayoutProperty('f100_100',"visibility", "visible");
+    map.setLayoutProperty('f100_500',"visibility", "visible");
+
+    map.setLayoutProperty('affHousing',"visibility", "visible");
+
+    var layerList = document.getElementById("menu");
+    var checkboxes = layerList.getElementsByTagName("input");
+
+
+    function switchLayer(layer) {
+      var clickedLayersLabel = layer.target.id; // get the label of the layer cluster
+      var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function
+
+      var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); // check whether the cluster of layers is visible by checking the first entry
+      if (visibility === "visible") {
+        map.setLayoutProperty(clickedLayersLabel, "visibility", "none")
+      } else {
+        map.setLayoutProperty(clickedLayersLabel, "visibility", "visible")
+      }
+    }
+
+    for (var i = 0; i < checkboxes.length; i++) {
+      // layerLabel  = checkboxes[i].id;
+      checkboxes[i].onclick = switchLayer;
+    }
+
+  });
+  map.on('mouseenter','affHousing',function(e){
+      const coordinates = e.features[0].geometry.coordinates.slice();
+        // Here's that function that does the transformation
+      function emptyToYesNo(val){
+        if (val  == null || val == undefined || val == " ") {return "No"} else {return "Yes"};
+      }
+      const Address = e.features[0].properties.Address;
+      const BBL = e.features[0].properties.BBL;
+      const Council = e.features[0].properties.Council;
+      const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1);
+      const P_2050_5 =emptyToYesNo(e.features[0].properties.P_2050_5);
+      const P_2100_1 =emptyToYesNo(e.features[0].properties.P_2100_1);
+      const P_2100_5 =emptyToYesNo(e.features[0].properties.P_2100_5); 
+      
+
+      var description = '<h4> ' +Address+'<br>'+
+                    'BBL: '+BBL+'<br>'+
+                    'City Council District: '+Council+ '</h4>'+
+                    '<p> In 2050 1 in 100yr Floodplain?: '+ P_2050_1 + '<br>' + 'In 2050 1 in 500yr Floodplain?: '+ P_2050_5 +'<br>'+
+                    'In 2100 1 in 100yr Floodplain?: '+P_2100_1 +'<br>'+
+                    'In 2100 1 in 500yr Floodplain?: '+P_2100_5 +'</p>'  
+
+      popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
+      map.on('mouseleave', 'affHousing', function() {
+        map.getCanvas().style.cursor = '';
+        popup.remove();});
+
+});
+
+  const popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+    });
+
+    // Within a script, you comment using two backslashes.
+    </script>
+</body>
+
+</html>
+
