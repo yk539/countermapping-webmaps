@@ -36,11 +36,9 @@ index.html
   <div id='map'></div>
 	<div class='map-overlay'>
   	<div class='map-overlay-inner'>
-  	<h2>Public and Affordable Housing Flood Risk</h2>
-    <p>In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = 'https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page'>without power for days or even weeks]</a>. New York City Housing Authority public housing developments were affected. <a href='https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf'>24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected adversely</a>.</p>
-
+  	<h2>NYC Flood Risk</h2>
     <p>With rising sea levels from climate change and the <a href='https://www.nytimes.com/2017/04/18/magazine/when-rising-seas-transform-risk-into-certainty.html'>promise</a> of more flooding, which areas and <i>who</i> will likely be most affected? How is affordable housing construction responding to this? 
-      <p>And is NYC governments trying to mitigate this disaster? </p>
+      <p>Is the city of New York attempting to mitigate the disaster? </p>
 
       <div id='menu'>
            <h3>Housing Type</h3>
@@ -72,28 +70,33 @@ index.html
 
       <br>
           <h3>Socioeconomic Status</h3> 
-          <label class='check-container'>
-               People Below Poverty Line in Gradation
-              <span class="legend-key" style='background:#f5ef42'> </span>
+          <label class='check-container'>People Below Poverty Line in Gradation
+               
+              <span class="legend-scale" style='background:#f5ef42'> </span>
               <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
-          <br>
-          <label class='check-container'>
-              +1000 Black or African American and Hispanic or Latino
-              <span class="legend-key" style='background:red'> </span>
-              <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
+    
+          <label class='check-container'>+1000 Black or African American 
+              <span class="legend-scale" style='background:red'> </span>
+              <input id='racezone1' type='checkbox' name='viz-toggle' checked='checked'>
+          </label>
+         
+
+          <label class='check-container'>+1000 Hispanic or Latino
+              
+              <span class="legend-scale" style='background:red'> </span>
+              <input id='racezone2' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <br>
-          <label class='check-container'>
-               + 200 Umunployment 
-              <span class="legend-key" style='background:red'> </span>
-              <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
+          <label class='check-container'>+200 Umunployment 
+              <span class="legend-scale" style='background:#7E6D53'> </span>
+              <input id='Unemploy' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <br>
-          <br>
-          <label class='check-container'>
-              Recovery and Resillience Projects
-                <span class="legend-key" style='background:#006d77'></span>
+           <h3>NYC government plans</h3> 
+          <label class='check-container'> Recovery and Resillience Projects
+             
+                <span class="legend-scale" style='background:#006d77'></span>
               <input id='recoveryPro' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
       
@@ -408,6 +411,7 @@ index.html
     map.setLayoutProperty('recoveryPro',"visibility", "visible");
     map.setLayoutProperty('racezone1',"visibility", "visible");
     map.setLayoutProperty('racezone2',"visibility", "visible");
+    map.setLayoutProperty('unemploy',"visibility", "visible");
 
     var layerList = document.getElementById("menu");
     var checkboxes = layerList.getElementsByTagName("input");
@@ -435,6 +439,7 @@ index.html
     const coordinates = e.features[0].geometry.coordinates.slice();
 
     const proj_name = e.features[0].properties.proj_name;
+    
 
      var description = '<h4> '+proj_name+'+</p>'
 
