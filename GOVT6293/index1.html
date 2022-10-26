@@ -79,17 +79,10 @@ index.html
           </label>
           <br>
           <label class='check-container'>
-              +1000 Black or African American and Hispanic or Latino
+               Racial Factors - Black or African American alone and Hispanic or Latino
               <span class="legend-key" style='background:red'> </span>
               <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
-          <br>
-          <label class='check-container'>
-               + 200 Umunployment 
-              <span class="legend-key" style='background:red'> </span>
-              <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
-          </label>
-          <br>
           <br>
           <label class='check-container'>
               Recovery and Resillience Projects
@@ -224,7 +217,7 @@ index.html
           }
         });
 
-      map.addLayer({
+      ap.addLayer({
         'id':'unemploy',
         'type':'fill',
         'source':'censusLayer',
@@ -234,7 +227,7 @@ index.html
           'fill-opacity':
            ['step',
            ['get', 'AMT9E005'],
-            0,200,0.4
+            0,300,0.2
 
             ],
 
