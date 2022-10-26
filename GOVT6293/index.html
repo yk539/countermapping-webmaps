@@ -1,38 +1,38 @@
 index.html
-<!-- This is to indicate we have an HTML document -->
+
 <!DOCTYPE html>
 
-<!-- All our code goes within this tag-->
+
 <html>
 
-<!-- All the metadata and packages/tools we'll use go in here-->
+
 <head>
 
-<!-- The charset attribute specifies the character encoding for the HTML document.-->
+
 <meta charset='utf-8' />
 
-<!-- The title of your page, which will appear in the browser tab -->
+
 <title>NYC Housing Flood Risk</title>
 
-<!-- The size of the viewport vs the rendered page -->
+
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-<!-- We are going to call the Mapbox GL javascript library, which will allow us to use its functionality -->
+
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
 
-<!-- Alongside this, we are going to bring in the Mapbox GL stylesheet -->
+
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
 
 <link href='style.css' rel='stylesheet' />
 
-<!-- This allows us to bring in new fonts -->
+
 <link href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet'>
 </head>
 
-<!-- The body contains the actual content of a page -->
+
 <body>
 
-<!-- The 'div' tag delineates a 'division' or section of the HTML page.-->
+
   <div id='map'></div>
 	<div class='map-overlay'>
   	<div class='map-overlay-inner'>
@@ -142,12 +142,12 @@ index.html
 
 	</div>
   <script>
-  // You'll be inserting your JS code to initialize your map here
+  //
   mapboxgl.accessToken = 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA';
   const map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/yk539/cl9087w3q001715o9ht59h3le', // replace this with your style URL
-    center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+    style: 'mapbox://styles/yk539/cl9087w3q001715o9ht59h3le', 
+    center: [-73.935242, 40.730610], 
     zoom: 13,
     // maxZoom: 22,
     minZoom: 12
@@ -396,8 +396,7 @@ index.html
         }
       });
 
-  // Explicitly set the visibility of each to be on or off.
-  // There are probably easier ways to do this../
+  
     map.setLayoutProperty('floodZones',"visibility", "visible");
     map.setLayoutProperty('povertyLevel',"visibility", "visible");
     map.setLayoutProperty('nychaBuildings',"visibility", "visible");
@@ -418,10 +417,9 @@ index.html
 
 
     function switchLayer(layer) {
-      var clickedLayersLabel = layer.target.id; // get the label of the layer cluster
-      var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function
-
-      var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); // check whether the cluster of layers is visible by checking the first entry
+      var clickedLayersLabel = layer.target.id;
+      var clickedLayers = eval(clickedLayersLabel); 
+      var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); 
       if (visibility === "visible") {
         map.setLayoutProperty(clickedLayersLabel, "visibility", "none")
       } else {
@@ -483,7 +481,7 @@ index.html
     closeOnClick: false
     });
 
-    // Within a script, you comment using two backslashes.
+    
     </script>
 </body>
 
