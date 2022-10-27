@@ -87,10 +87,10 @@ index.html
               <span class="legend-scale" style='background:red'> </span>
               <input id='racezone2' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
-          <br>
-          <label class='check-container'>+200 Umunployment 
+      
+          <label class='check-container'>+200 Unemployment 
               <span class="legend-scale" style='background:#7E6D53'> </span>
-              <input id='Unemploy' type='checkbox' name='viz-toggle' checked='checked'>
+              <input id='unemploy' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <br>
            <h3>NYC government plans</h3> 
@@ -444,7 +444,8 @@ index.html
       popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
       map.on('mouseleave', 'recoveryPro', function() {
         map.getCanvas().style.cursor = '';
-        popup.remove();});
+        popup.remove();
+      });
   });
 
   map.on('mouseenter','affHousing',function(e){
