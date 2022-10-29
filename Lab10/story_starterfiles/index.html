@@ -284,7 +284,7 @@ var map = new mapboxgl.Map({
 if (config.inset) {
  var insetMap = new mapboxgl.Map({
     container: 'mapInset', // container id
-    style: 'mapbox://styles/yk539/cl99dicy4000w14pe7ghq0lvu', //hosted style id
+    style: 'mapbox://styles/yk539/cl9uer1qz000315mt3uxbm8yy', //hosted style id
     center: config.chapters[0].location.center,
     // Hardcode above center value if you want insetMap to be static.
     zoom: 3, // starting zoom
@@ -327,65 +327,7 @@ map.on("load", function() {
                 'sky-atmosphere-sun-intensity': 15
             }
         });
-        map.addSource('FutureFloodplains_2050_100yr',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.crrx4301'
-      });
-
-      map.addSource('FutureFloodplains_2050_500yr',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.4ydk0450'
-      });
-      map.addSource('FutureFloodplains_2100_100yr',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.dxjuiivg'
-      });
-
-      map.addSource('FutureFloodplains_2100_500yr',{
-        'type':'vector',
-        'url': 'mapbox://iamwfx.8thgevrt'
-      });
-
-      map.addLayer({
-        'id':'f50_100',
-        'type':'fill',
-        'source':'FutureFloodplains_2050_100yr',
-        'source-layer':'FutureFloodplains_2050_100yr-6nepei',
-        'paint':{
-          'fill-color':'#00158f',
-          'fill-opacity': 0.3
-        }
-      });
-      map.addLayer({
-        'id':'f50_500',
-        'type':'fill',
-        'source':'FutureFloodplains_2050_500yr',
-        'source-layer':'FutureFloodplains_2050_500yr-a4444h',
-        'paint':{
-          'fill-color':'#00158f',
-          'fill-opacity': 0.3
-        }
-      });
-      map.addLayer({
-        'id':'f100_100',
-        'type':'fill',
-        'source':'FutureFloodplains_2100_100yr',
-        'source-layer':'FutureFloodplains_2100_100yr-cqwfrw',
-        'paint':{
-          'fill-color':'#00158f',
-          'fill-opacity': 0.3
-        }
-      });
-      map.addLayer({
-        'id':'f100_500',
-        'type':'fill',
-        'source':'FutureFloodplains_2100_500yr',
-        'source-layer':'FutureFloodplains_2100_500yr-27ghpw',
-        'paint':{
-          'fill-color':'#00158f',
-          'fill-opacity': 0.3
-        }
-      });
+   
 
     };
 

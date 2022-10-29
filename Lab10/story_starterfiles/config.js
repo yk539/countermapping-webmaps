@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/yk539/cl99dicy4000w14pe7ghq0lvu',
+    style: 'mapbox://styles/yk539/cl9uer1qz000315mt3uxbm8yy',
     accessToken: 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA',
     showMarkers: true,
     markerColor: 'red',
