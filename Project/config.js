@@ -152,6 +152,25 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
+        {
+            id: '6-identifier',
+            alignment: 'left',
+            hidden: false,
+            title: 'Minho, 30 ',
+            //image: 'images/IMG_1917.jpg',
+            description: 'TBD with Video',
+            location: {
+                center: [126.97176, 37.57629],
+                zoom: 15.86,
+                pitch: 55.50,
+                bearing: -35.20
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
         
         {
             id: '7-identifier',
@@ -173,12 +192,50 @@ var config = {
             onChapterExit: []
         },
         {
+            id: '7-identifier',
+            alignment: 'left',
+            hidden: false,
+            title: 'Jae-Woo, 24',
+            //image: 'images/IMG_1956.jpg',
+            description: 'TBD with video',
+            location: {
+                center: [126.97750, 37.49277],
+                zoom: 12.08,
+                pitch: 66.14,
+                bearing: -10.11
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: '8-identifier',
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
             image: 'images/IMG_2042.gif',
             description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
+            location: {
+              center: [126.92288, 37.50216],
+              zoom: 14.33,
+              pitch: 65.13,
+              bearing: 50.90
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '9-identifier',
+            alignment: 'right',
+            hidden: false,
+            title: 'Mi-Young, 53',
+            //image: 'images/IMG_2042.gif',
+            description: 'TBD with Video',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,
