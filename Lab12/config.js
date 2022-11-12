@@ -13,7 +13,7 @@ var config = {
     subtitle: 'Assessing Risks to Vulnerable Housing',
     byline: 'By YJ Kang',
     para1:'Climate change is affecting the world in many ways and sizes. In the United States, major coastal communities are usually prepared for the potential of floods, but such safeguards are believed to be missing. Flooding is becoming increasingly common throughout the United States coastline. Since the 1950s, all sites measured have experienced increased coastal flooding. Most places along the east and gulf coasts are experiencing faster growth. The East Coast is seeing the most frequent coastal flooding and has seen the greatest rise in flood days overall.',
-    para2:'Furthermore, recent droughts and floods have occurred in a row in bay locations such as San Francisco as a result of massive climate change. So, we looked at how the flooding appeared in San Francisco, Washington, DC, and New York City.',
+    para2:'Furthermore, recent droughts and floods have occurred in a row in bay locations such as San Francisco as a result of massive climate change. So, we looked at how the flooding appeared in San Francisco, Washington, DC, and New York City. In particular, many studies have shown that this area is expected to suffer severe or severe damage to areas with many socially disadvantaged groups such as low-income groups and immigrants, and that it appears to be an area with many affordable housing sectors.',
     footer: 'San Francisco News, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
