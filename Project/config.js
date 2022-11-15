@@ -195,7 +195,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
-            //image: 'images/IMG_1917.jpg',
+            video: 'images/IMG_1920.mp4',
             description: 'TBD with Video',
             location: {
                 center: [126.97176, 37.57629],
