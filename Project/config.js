@@ -120,7 +120,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Interviews with the people with disability',
-            image: '',
+            image: 'https://raw.githubusercontent.com/yk539/countermapping-webmaps/main/Project/images/IMG_2028.JPG',
             description: 'There have been 20 interviews with individuals with disabilities so far. Most of them were visually imapired, two were physically impaired with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel bevaior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
             location: {
                 center: [126.87380, 37.53757],
