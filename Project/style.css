@@ -2,7 +2,7 @@
         body {
             margin:0;
             padding:0;
-            font-family: sans-serif;
+            font-family: 'Lato', sans-serif;
         }
         a, a:hover, a:visited {
             color: #0071bc;
@@ -58,6 +58,21 @@
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
+        }
+        #interlude {
+            width: 100vw;
+        }
+        #interlude p{
+            font-size: 1.2vh;
+            text-align: justify;
+            margin-left: 34vw;
+            margin-right: 34vw;
+            background-color: : white;
+        }
+        video {
+            margin-left: 45vw;
+            width:32%;
+            transform: translate(-50%);
         }
         .hidden {
             visibility: hidden;

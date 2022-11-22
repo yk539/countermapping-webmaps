@@ -7,7 +7,7 @@ var config = {
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
-    theme: 'dark',
+    theme: 'light',
     use3dTerrain: true, //set true for enabling 3D maps.
     title: 'Revealing the invisible challenges of pedestrians with disability',
     subtitle: '  Focusing on Seoul, the Republic of Korea',
@@ -19,7 +19,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Why Seoul?',
-            //image: 'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
+            image: 'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
             description: 'Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018. In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population.',
             location: {
                 center: [126.87380, 37.53757],
@@ -49,7 +49,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Seoul Geographical Characteristics',
-           // image: 'http://www.travelnbike.com/news/photo/201510/13970_14165_357.jpg',
+           image: 'http://www.travelnbike.com/news/photo/201510/13970_14165_357.jpg',
             //image: 'http://img.tvchosun.com/sitedata/image/201911/29/2019112990109_thumb.jpg',
             description: 'The diagram is a road slope in Seoul. In Seoul, 8 out of 25 autonomous districts had a slope of 7% or higher, and 9 were flat areas with a slope of less than 3%.I n addition, it was investigated that 42 large and small mountains were located in Seoul.',
             location: {
@@ -75,7 +75,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             //title: 'Seoul Geographical Characteristics',
-            //image: 'http://img.tvchosun.com/sitedata/image/201911/29/2019112990109_thumb.jpg',
+           image: 'http://img.tvchosun.com/sitedata/image/201911/29/2019112990109_thumb.jpg',
             description: ' Due to these topographical characteristics, there are alleys that are difficult for even people without disabilities to climb, and wheelchair rollover accidents are constantly occurring.',
             location: {
                 center: [126.9875215578272, 37.55136970793704],
@@ -119,7 +119,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Interviews with the people with disability',
-            //image: 'https://www.aiany.org/wp-content/uploads/2018/04/NYCHA_Red_Hook_Houses_slope_green.jpg',
+            image: '',
             description: 'There have been 20 interviews with individuals with disabilities so far. Most of them were visually imapired, two were physically impaired with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel bevaior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
             location: {
                 center: [126.87380, 37.53757],
@@ -138,7 +138,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Planning a trip',
-            //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
             description: 'Planning for mobility and transportation is more necessary for the disabled than for non-impaired people. When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings. Lastly, A walking instructor is also used by those who walk alone or where walking is vital. #They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture.',
             location: {
                 center: [126.87380, 37.53757],
@@ -157,7 +157,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'On a trip',
-            //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
             description: 'We devided into Walk/Roll, Bus, Subway and Paratransit taxi. (TBD)',
             location: {
                 center: [126.87380, 37.53757],
