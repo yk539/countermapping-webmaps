@@ -71,8 +71,8 @@
             background-color: : white;
         }
         video {
-            margin-left: 45vw;
-            width:32%;
+            margin-left: vw;
+            width:90%;
             transform: translate(-50%);
         }
         .hidden {
