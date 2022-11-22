@@ -2,7 +2,7 @@
         body {
             margin:0;
             padding:0;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
         }
         a, a:hover, a:visited {
             color: #0071bc;
@@ -43,8 +43,27 @@
             margin: 0;
             padding: 2vh 2vw;
             text-align: center;
-            font-family: 'Lato', sans-serif;
         }
+
+        #header h1 {
+            font-size: 7vh;
+            color: black;
+            Font-weight:700;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #header h2{
+            font-size: 3vh;
+            color: black;
+            Font-weight:400;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #header p{
+            font-size: 1.6vh;
+            color: black;
+            Font-weight:200;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
         #footer {
             width: 100%;
             min-height: 5vh;
