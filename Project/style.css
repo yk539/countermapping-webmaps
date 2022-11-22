@@ -38,7 +38,13 @@
             width: 100%;
             position: relative;
             z-index: 5;
+            height: 170vh;
+            background-image: url("https://image.newsis.com/2022/04/21/NISI20220421_0018720345_web.jpg?rnd=20220421082847");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;          
         }
+
         #header h1, #header h2, #header p {
             margin: 0;
             padding: 2vh 2vw;
@@ -47,20 +53,25 @@
 
         #header h1 {
             font-size: 7vh;
-            color: black;
+            color: white;
+            padding-top: 40vh;
             Font-weight:700;
             font-family: 'Titillium Web', sans-serif;
         }
         #header h2{
             font-size: 3vh;
-            color: black;
+            color: white;
             Font-weight:400;
+            padding-bottom:55vh;
             font-family: 'Titillium Web', sans-serif;
         }
         #header p{
             font-size: 1.6vh;
+            text-align: justify;
+            margin-left: 30vw;
+            margin-right: 30vw;
             color: black;
-            Font-weight:200;
+            Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
         }
 
