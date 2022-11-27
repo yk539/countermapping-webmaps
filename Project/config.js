@@ -33,35 +33,55 @@ var config = {
             callback: '',
             onChapterEnter: [
             {
-                layer: 'Route',
+                layer: 'Routes',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Quick Charger - wheelchair',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Elevator-subway',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Iso_Lift',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Iso_Elvt',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Seoul -number of PWD',
                 opacity: 0.7,
             }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+            {
+                layer: 'Routes',
+                opacity: 0,
+            },
+            {
+                layer: 'Quick Charger - wheelchair',
+                opacity: 0,
+            },
+            {
+                layer: 'Elevator-subway',
+                opacity: 0,
+            },
+            {
+                layer: 'Iso_Lift',
+                opacity: 0,
+            },
+            {
+                layer: 'Iso_Elvt',
+                opacity: 0.7,
+            },
+            {
+                layer: 'Seoul -number of PWD',
+                opacity: 0.7,
+            }
             ]
         },
         {
@@ -82,25 +102,25 @@ var config = {
             callback: '',
             onChapterEnter: [
             {
-                layer: 'Route',
+                layer: 'Routes',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Quick Charger - wheelchair',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Elevator-subway',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Iso_Lift',
                 opacity: 0,
-            }
+            },
             {
                 layer: 'Iso_Elvt',
                 opacity: 0.7,
-            }
+            },
             {
                 layer: 'Seoul -number of PWD',
                 opacity: 0.7,
