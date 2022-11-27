@@ -273,7 +273,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_2052.MP4?raw=true',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_2052.MP4?raw=true',
             description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
             location: {
               center: [126.92288, 37.50216],
