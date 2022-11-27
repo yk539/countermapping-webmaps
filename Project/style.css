@@ -66,7 +66,7 @@
             font-family: 'Titillium Web', sans-serif;
         }
         #header p{
-            font-size: 1.6vh;
+            font-size: 2vh;
             text-align: justify;
             margin-left: 30vw;
             margin-right: 30vw;
@@ -88,12 +88,21 @@
             Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
         }
+
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
         }
+        #features h3 {
+        font-size: 2.4vh;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Titillium Web', serif;
+        text-align: left;
+        max-width: 50vw;
+        }
          #features p{
-            font-size: 1.2vh;
+            font-size: 1.8vh;
             text-align: justify;
             background-color: : white;
             Font-weight:400;

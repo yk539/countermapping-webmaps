@@ -196,7 +196,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
-            video: 'images/IMG_1920.mp4',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_1920.MP4?raw=true',
             description: 'TBD with Video',
             location: {
                 center: [126.97176, 37.57629],
