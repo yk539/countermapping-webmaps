@@ -196,7 +196,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
-            image: 'images/IMG_1917.jpg',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1917.JPG?raw=true',
             description: 'Minho, is visually impaired and this route was his way home from work. He is using the cane but needs accompany who can guide him for the right direction. This time, he was with his father but usually with the personal assist service person. I walked from the subway station to the house. The same route, map says takes 9 mins but we spent our time walking 15mins.',
             location: {
                 center: [126.97176, 37.57629],
@@ -235,7 +235,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Jae-Woo, 24',
-            image: 'images/IMG_1956.jpg',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1956.JPG?raw=true',
             description: 'Jaewoo has visual impairments but he was accompanied by his guide dog. He was on his way to work using paratransit taxi. He frequently goes at work very early. Because there is a scarcity of quantity, people must wait till uncertain times. This time, we spent around 40 mins from his house to his workplace.',
             location: {
                 center: [126.97750, 37.49277],
@@ -273,7 +273,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
-            image: 'images/IMG_2042.gif',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_IMG_2042.MP4?raw=true',
             description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
             location: {
               center: [126.92288, 37.50216],
