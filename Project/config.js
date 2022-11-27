@@ -54,10 +54,10 @@ var config = {
             //image: 'http://img.tvchosun.com/sitedata/image/201911/29/2019112990109_thumb.jpg',
             description: 'The diagram is a road slope in Seoul. In Seoul, 8 out of 25 autonomous districts had a slope of 7% or higher, and 9 were flat areas with a slope of less than 3%.I n addition, it was investigated that 42 large and small mountains were located in Seoul.',
             location: {
-                center: [126.9875215578272, 37.55136970793704],
-                zoom: 17,
+                center: [126.980, 37.588],
+                zoom: 16.37,
                 pitch: 60,
-                bearing: -43.2,
+                //bearing: -43.2,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -79,7 +79,7 @@ var config = {
            image: 'http://img.tvchosun.com/sitedata/image/201911/29/2019112990109_thumb.jpg',
             description: ' Due to these topographical characteristics, there are alleys that are difficult for even people without disabilities to climb, and wheelchair rollover accidents are constantly occurring.',
             location: {
-                center: [126.9875215578272, 37.55136970793704],
+                center: [126.9256461490327, 37.56968371629236],
                 zoom: 17,
                 pitch: 60,
                 bearing: -43.2,
