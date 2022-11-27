@@ -39,10 +39,10 @@
             position: relative;
             z-index: 5;
             height: 170vh;
-            background-image: url("https://image.newsis.com/2022/04/21/NISI20220421_0018720345_web.jpg?rnd=20220421082847");
+            background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2022/04/21/112998920.4.jpg");
             background-position: top;
             background-repeat: no-repeat;
-            background-size: 100vw 100vh;          
+            background-size: 100vw 110vh;          
         }
 
         #header h1, #header h2, #header p {
@@ -85,10 +85,19 @@
             font-size: 13px;
             position: relative;
             z-index: 5;
+            Font-weight:400;
+            font-family: 'Titillium Web', sans-serif;
         }
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
+        }
+         #features p{
+            font-size: 1.2vh;
+            text-align: justify;
+            background-color: : white;
+            Font-weight:400;
+            font-family: 'Titillium Web', sans-serif;
         }
         #interlude {
             width: 100vw;
@@ -99,6 +108,8 @@
             margin-left: 34vw;
             margin-right: 34vw;
             background-color: : white;
+            Font-weight:400;
+            font-family: 'Titillium Web', sans-serif;
         }
         video {
             margin-left: vw;
