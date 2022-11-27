@@ -154,6 +154,25 @@ var config = {
             onChapterExit: []
         },
         {
+            id: '5-1-identifier',
+            alignment: 'center',
+            hidden: false,
+            title: 'Planning a trip',
+            image : 'https://img.freepik.com/premium-vector/disabled-people-community-service-vector-illustration-flat-people-character-help-each-other-talk-support-together-man-with-leg-prosthesis_109722-3216.jpg',
+            description: 'Planning for mobility and transportation is more necessary for the disabled than for non-impaired people. When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings. Lastly, A walking instructor is also used by those who walk alone or where walking is vital. #They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture.',
+            location: {
+                center: [126.87380, 37.53757],
+                zoom: 10.00,
+                pitch: 12.50,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: '5-2-identifier',
             alignment: 'center',
             hidden: false,
