@@ -16,12 +16,61 @@ var config = {
     footer: 'Source',
     chapters: [
         {
+            id: '0-identifier',
+            alignment: 'center',
+            hidden: false,
+            title: 'Why Seoul?',
+            image: '',
+            description: 'Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018.More than 8.46 thousand people with disabilities live in the deep blue areas.',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 10.00,
+                pitch: 12.50,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+            {
+                layer: 'Route',
+                opacity: 0,
+            }
+            {
+                layer: 'Quick Charger - wheelchair',
+                opacity: 0,
+            }
+            {
+                layer: 'Elevator-subway',
+                opacity: 0,
+            }
+            {
+                layer: 'Iso_Lift',
+                opacity: 0,
+            }
+            {
+                layer: 'Iso_Elvt',
+                opacity: 0,
+            }
+            {
+                layer: 'Seoul -number of PWD',
+                opacity: 0.7,
+            }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
             id: '1-identifier',
             alignment: 'left',
             hidden: false,
             title: 'Why Seoul?',
             image: 'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
-            description: 'Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018. In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population.',
+            description: 'In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population.',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
@@ -32,11 +81,30 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+            {
+                layer: 'Route',
+                opacity: 0,
+            }
+            {
+                layer: 'Quick Charger - wheelchair',
+                opacity: 0,
+            }
+            {
+                layer: 'Elevator-subway',
+                opacity: 0,
+            }
+            {
+                layer: 'Iso_Lift',
+                opacity: 0,
+            }
+            {
+                layer: 'Iso_Elvt',
+                opacity: 0.7,
+            }
+            {
+                layer: 'Seoul -number of PWD',
+                opacity: 0.7,
+            }
             ],
             onChapterExit: [
                 // {
