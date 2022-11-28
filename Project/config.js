@@ -16,7 +16,7 @@ var config = {
     footer: 'Source',
     chapters: [
         {
-            id: '0-identifier',
+            id: '1-1Chapter',
             alignment: 'center',
             hidden: false,
             title: 'Why Seoul?',
@@ -24,7 +24,7 @@ var config = {
             description: 'Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018.More than 8.46 thousand people with disabilities live in the deep blue areas.',
             location: {
                 center: [127.00313, 37.56275],
-                zoom: 10.00,
+                zoom: 9.00,
                 pitch: 12.50,
                 bearing: 0.00
             },
@@ -85,11 +85,11 @@ var config = {
             ]
         },
         {
-            id: '1-identifier',
+            id: '1-2',
             alignment: 'left',
             hidden: false,
             title: 'Why Seoul?',
-            image: 'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
+            image:'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
             description: 'In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population.',
             location: {
                 center: [126.87380, 37.53757],
@@ -134,7 +134,7 @@ var config = {
             ]
         },
         {
-            id: '2-identifier',
+            id: '1-3',
             alignment: 'right',
             hidden: false,
             title: 'Seoul Geographical Characteristics',
@@ -160,7 +160,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '3-identifier',
+            id: '1-4',
             alignment: 'right',
             hidden: false,
             //title: 'Seoul Geographical Characteristics',
@@ -185,10 +185,10 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '4-identifier',
+            id: '1-5',
             alignment: 'left',
             hidden: false,
-            title: 'Current Situation of Accessibility',
+            title: 'Current Situation of Subway Accessibility',
             image: 'images/Picture2.jpg',
             description: 'When the shortest distance to the entrance of the subway station was summarized, Seocho-gu and Gangnam-gu, the districts with a significantly lower ratio of persons with disabilities than the average in Seoul, showed the smallest distance. In addition, the districts that take the longest from the station are Guro-gu and Geumcheon-gu, which are blue, and these two districts have a high proportion of people with disabilities. As such, urban transportation infrastructure such as subway stations is not distributed throughout, and accessibility is different.',
             location: {
@@ -203,17 +203,19 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-                {
-            id: '4-identifier',
-            alignment: 'center',
+            {
+            id: '1-6',
+            alignment: 'right',
             hidden: false,
             title: 'Current State in SMA',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/WHY.png?raw=true',
+            //image-height: '10vh',
             description: "The growing number of people with disabilities <p> Lack of effectiveness of laws and regulations <p> Research on people with disabilities is slow<p>SADD subway protests increase negative image",
             location: {
                 center: [127.00313, 37.56275],
                 zoom: 10.00,
-                pitch: 12.50,
-                bearing: 0.00
+                //pitch: 12.50,
+                //bearing: 0.00
                 //bearing: -43.2,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
@@ -223,20 +225,70 @@ var config = {
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'interlude',
+            id: '1-7',
+            alignment: 'center',
+            hidden: false,
+            title: 'Research Direction',
+            description: "• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of disabled people face?",
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 11.00,
+                //pitch: 12.50,
+                //bearing: 0.00
+                //bearing: -43.2,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+         {
+            id: '1-7',
+            alignment: 'center',
+            hidden: false,
+            title: 'Methodology',
+            description: "• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of disabled people face?",
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 11.00,
+                //pitch: 12.50,
+                //bearing: 0.00
+                //bearing: -43.2,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '2-0',
             alignment: 'center',
             hidden: false,
             title: 'Interviews with the people with disability',
             image: 'https://raw.githubusercontent.com/yk539/countermapping-webmaps/main/Project/images/IMG_2028.JPG',
             description: 'There have been 20 interviews with individuals with disabilities so far. Most of them were visually imapired, two were physically impaired with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel bevaior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
             location: {
-                center: [126.87380, 37.53757],
+                center: [126.87380, 37.7757],
                 zoom: 10.00,
                 pitch: 12.50,
                 bearing: 0.00
@@ -248,8 +300,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '5-1-identifier',
-            alignment: 'center',
+            id: '2-1',
+            alignment: 'left',
             hidden: false,
             title: 'Planning a trip',
             image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
@@ -267,18 +319,55 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '5-1-identifier',
+            id: '2-2',
             alignment: 'center',
             hidden: false,
-            title: 'Planning a trip',
+            //title: 'Planning a trip',
             image : 'https://img.freepik.com/premium-vector/disabled-people-community-service-vector-illustration-flat-people-character-help-each-other-talk-support-together-man-with-leg-prosthesis_109722-3216.jpg',
-            description: 'Planning for mobility and transportation is more necessary for the disabled than for non-impaired people. When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings. Lastly, A walking instructor is also used by those who walk alone or where walking is vital. #They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture.',
+            description: '<b> Source of Travel Information<b><p> When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings.',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
                 pitch: 12.50,
                 bearing: 0.00
             },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '5-1-identifier',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Planning a trip',
+            description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. #They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center.',
+            image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            location: {
+               center: [127.16920, 37.55083],
+               zoom: 17.00,
+               pitch: 60.00,
+               bearing: -52.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '5-1-identifier',
+            alignment: 'right',
+            hidden: false,
+            description: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty    Safety issues <P> Lack of resources :  Information   Networks   Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
+            //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+           location: {
+           center: [126.981090, 37.52394],
+           zoom: 12.52,
+           pitch: 60.50,
+           bearing: 0.00
+       },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
@@ -290,8 +379,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'On a trip',
-            image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-            description: 'We devided into Walk/Roll, Bus, Subway and Paratransit taxi. (TBD)',
+            //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            description: 'We devided into Walk/Roll, Bus, Subway and Paratransit taxi. In addition to public transportation such as cars (63%), intercity and express buses (10.7%), and trains (8.1%), disabled taxis (8.1%) and special transportation (5.3%) were also highly used.',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,

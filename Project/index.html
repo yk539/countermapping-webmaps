@@ -121,9 +121,8 @@ config.chapters.forEach((record, idx) => {
     videoDiv.setAttribute('class', 'videoContainer');
     video =  document.createElement('video');
     video.controls=true;
-    video.autoplay=true;
+    video.autoplay=false;
     video.loop=true;
-    video.mute=true;
     video.src = record.video;
     videoDiv.appendChild(video)
     chapter.appendChild(videoDiv);
