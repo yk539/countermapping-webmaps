@@ -120,8 +120,14 @@
             Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
         }
+        image {
+            margin-left: 1vw;
+            width:90%;
+            transform: translate(-50%);
+        }
+
         video {
-            margin-left: vw;
+            margin-left: 3vw;
             width:90%;
             transform: translate(-50%);
         }

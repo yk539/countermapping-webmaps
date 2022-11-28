@@ -123,9 +123,11 @@ config.chapters.forEach((record, idx) => {
     video.controls=true;
     video.autoplay=true;
     video.loop=true;
+    video.mute=true;
     video.src = record.video;
     videoDiv.appendChild(video)
     chapter.appendChild(videoDiv);
+
     }
 
     container.setAttribute('id', record.id);

@@ -203,8 +203,33 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
+                {
+            id: '4-identifier',
+            alignment: 'center',
+            hidden: false,
+            title: 'Current State in SMA',
+            description: "The growing number of people with disabilities <p> Lack of effectiveness of laws and regulations <p> Research on people with disabilities is slow<p>SADD subway protests increase negative image",
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 10.00,
+                pitch: 12.50,
+                bearing: 0.00
+                //bearing: -43.2,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
         {
-            id: '5-identifier',
+            id: 'interlude',
             alignment: 'center',
             hidden: false,
             title: 'Interviews with the people with disability',

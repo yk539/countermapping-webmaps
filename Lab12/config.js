@@ -17,7 +17,7 @@ var config = {
     footer: 'San Francisco News, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-            id: 'first-chapter',
+            id: '1',
             alignment: 'left',
             hidden: false,
             title: 'San Francisco',
@@ -47,7 +47,7 @@ var config = {
             ]
         },
         {
-            id: 'second-chapter',
+            id: '2',
             alignment: 'right',
             hidden: false,
             title: 'Washington D.C',
