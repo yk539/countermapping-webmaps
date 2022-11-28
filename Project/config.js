@@ -134,6 +134,26 @@ var config = {
             ]
         },
         {
+            id: '1-1-1 Chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: 'https://flexible.img.hani.co.kr/flexible/normal/640/427/imgdb/original/2022/0802/20220802502814.jpg',
+            description: '<b> Disability Rights Activists Protesting in front of Seoul Metropolitan Police Agency <b> <p>Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018.More than 8.46 thousand people with disabilities live in the deep blue areas.',
+            location: {
+                center: [126.97224, 37.57427],
+                zoom: 16.95,
+                pitch: 73.25,
+                bearing: 47.01
+            },
+           mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+
+        {
             id: '1-3',
             alignment: 'right',
             hidden: false,
@@ -196,6 +216,25 @@ var config = {
                 zoom: 12.04,
                 pitch: 45,
                 bearing: -40.2
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '1-5',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Current Situation of Subway Accessibility',
+            //image: 'LEGEND',
+            description: '<b>Subway Station Accessibility<b><p>5, 10 min with wheelchair.Map explanation ',
+            location: {
+                ccenter: [126.96993, 37.55371],
+                zoom: 16.05,
+                pitch: 51.90,
+                bearing: 17.68
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -360,7 +399,7 @@ var config = {
             id: '5-1-identifier',
             alignment: 'right',
             hidden: false,
-            description: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty    Safety issues <P> Lack of resources :  Information   Networks   Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
+            description: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
             //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
            location: {
            center: [126.981090, 37.52394],
@@ -380,7 +419,7 @@ var config = {
             hidden: false,
             title: 'On a trip',
             //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-            description: 'We devided into Walk/Roll, Bus, Subway and Paratransit taxi. In addition to public transportation such as cars (63%), intercity and express buses (10.7%), and trains (8.1%), disabled taxis (8.1%) and special transportation (5.3%) were also highly used.',
+            description: 'We devided into <b> Walk/Roll, Bus, Subway and Paratransit taxi<b>.<p> From this part, we will use the semi-structured interviews and go-along interviews materials.<p> In addition to public transportation such as cars (63%), intercity and express buses (10.7%), and trains (8.1%), disabled taxis (8.1%) and special transportation (5.3%) were also highly used.',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
