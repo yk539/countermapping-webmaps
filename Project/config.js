@@ -15,24 +15,6 @@ var config = {
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source',
     chapters: [
-        { id: 'Chapter1_1',
-            alignment: 'left',
-            hidden: false,
-            //title: 'Why Seoul?',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
-            description: 'Seoul has 25 districts and the number of people with disabilities is - ',
-            location: {
-                center: [127.00313, 37.56275],
-                zoom: 9.00,
-                pitch: 12.50,
-                bearing: 0.00
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
             {
             id: '1-1Chapter',
             alignment: 'center',
@@ -67,7 +49,7 @@ var config = {
                 opacity: 0,
             },            
             {
-                layer : 'two-districts-bs88rp',
+                layer : 'Two-districts',
                 opacity: 0,
             },
 
@@ -85,42 +67,60 @@ var config = {
                 opacity: 0,
             }
             ],
-            onChapterExit: [
-            {
-                layer: 'Routes',
-                opacity: 0,
-            },
-            {
-                layer: 'Elevator-subway',
-                opacity: 0,
-            },
-            {
-                layer: 'iso-elvt-west',
-                opacity: 0.5,
-            },
-            {
-                layer: 'Lift-subway',
-                opacity: 0,
-            },            
-            {
-                layer : 'two-districts-bs88rp',
-                opacity: 0,
-            },
+            onChapterExit: []
+            // {
+            //     layer: 'Routes',
+            //     opacity: 0,
+            // },
+            // {
+            //     layer: 'Elevator-subway',
+            //     opacity: 0,
+            // },
+            // {
+            //     layer: 'iso-elvt-west',
+            //     opacity: 0.0,
+            // },
+            // {
+            //     layer: 'Lift-subway',
+            //     opacity: 0,
+            // },            
+            // {
+            //     layer : 'Two-districts',
+            //     opacity: 0,
+            // },
 
-            {
-                layer: 'Iso_Lift',
-                opacity: 0,
-            },
+            // {
+            //     layer: 'Iso_Lift',
+            //     opacity: 0,
+            // },
 
-            {
-                layer: 'Seoul -number of PWD',
-                opacity: 0,
+            // {
+            //     layer: 'Seoul -number of PWD',
+            //     opacity: 0,
+            // },
+            // {
+            //     layer: 'Seoul',
+            //     opacity: 0.7,
+            // }
+            // ]
+        },
+        { id: 'Chapter1_1',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Why Seoul?',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
+            description: 'Seoul has 25 districts and the number of people with disabilities is - ',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 9.00,
+                pitch: 12.50,
+                bearing: 0.00
             },
-            {
-                layer: 'Seoul',
-                opacity: 0.7,
-            }
-            ]
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: '1-2',
@@ -165,10 +165,40 @@ var config = {
             }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+            {
+                layer: 'Routes',
+                opacity: 0,
+            },
+            {
+                layer: 'Elevator-subway',
+                opacity: 0,
+            },
+            {
+                layer: 'iso-elvt-west',
+                opacity: 0.0,
+            },
+            {
+                layer: 'Lift-subway',
+                opacity: 0,
+            },            
+            {
+                layer : 'Two-districts',
+                opacity: 0,
+            },
+
+            {
+                layer: 'Iso_Lift',
+                opacity: 0,
+            },
+
+            {
+                layer: 'Seoul -number of PWD',
+                opacity: 0,
+            },
+            {
+                layer: 'Seoul',
+                opacity: 0.7,
+            }
             ]
         },
         {
