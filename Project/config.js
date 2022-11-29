@@ -15,7 +15,25 @@ var config = {
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source',
     chapters: [
-        {
+        { id: '1-1Chapter',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Why Seoul?',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
+            description: 'Seoul has 25 districts and the number of people with disabilities is - ',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 9.00,
+                pitch: 12.50,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+            {
             id: '1-1Chapter',
             alignment: 'center',
             hidden: false,
