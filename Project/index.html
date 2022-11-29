@@ -248,6 +248,10 @@ map.on("load", function() {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
         map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+        // 1. MUTE THE VIDEO
+        // 2. IF THE CHAPTER IS THE ONE WITH THE VIDEO, UNMUTE
+
         // Incase you do not want to have a dynamic inset map,
         // rather want to keep it a static view but still change the
         // bbox as main map move: comment out the below if section.
@@ -280,6 +284,7 @@ map.on("load", function() {
         }
     })
     .onStepExit(response => {
+        // 1. MUTE THE VIDEO
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');
         if (chapter.onChapterExit.length > 0) {

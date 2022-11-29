@@ -44,7 +44,11 @@
             background-repeat: no-repeat;
             background-size: 100vw 110vh;          
         }
+        #Chapter1_1 img{
+            width: 50%;
+            height: auto;
 
+        }
         #header h1, #header h2, #header p {
             margin: 0;
             padding: 2vh 2vw;
