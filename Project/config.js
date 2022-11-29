@@ -15,24 +15,24 @@ var config = {
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source',
     chapters: [
-        // { id: 'Chapter1_1',
-        //     alignment: 'left',
-        //     hidden: false,
-        //     //title: 'Why Seoul?',
-        //     image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
-        //     description: 'Seoul has 25 districts and the number of people with disabilities is - ',
-        //     location: {
-        //         center: [127.00313, 37.56275],
-        //         zoom: 9.00,
-        //         pitch: 12.50,
-        //         bearing: 0.00
-        //     },
-        //     mapAnimation: 'flyTo',
-        //     rotateAnimation: false,
-        //     callback: '',
-        //     onChapterEnter: [],
-        //     onChapterExit: []
-        // },
+        { id: 'Chapter1_1',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Why Seoul?',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
+            description: 'Seoul has 25 districts and the number of people with disabilities is - ',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 9.00,
+                pitch: 12.50,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
             {
             id: '1-1Chapter',
             alignment: 'center',
@@ -281,14 +281,12 @@ bearing: 0.00
             onChapterEnter: [],
             onChapterExit: []
         },
-        
             {
-            id: '1-10',
-            alignment: 'center',
+            id: 'Chapter1_10',
+            //alignment: 'center',
             hidden: false,
             title: 'Current State in SMA',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/WHY.png?raw=true',
-            //image-height: '10vh',
+            //image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/WHY.png?raw=true',
             description: "The growing number of people with disabilities <p> Lack of effectiveness of laws and regulations <p> Research on people with disabilities is slow<p>SADD subway protests increase negative image",
             location: {
                 center: [127.00313, 37.56275],

@@ -49,6 +49,20 @@
             height: auto;
 
         }
+        #Chapter1_10 {
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            height: 110vh;
+            background-image: url("https://newmobility.com/wp-content/uploads/2021/06/BlueManDebate.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100vw 110vh; 
+
+        }
+
         #header h1, #header h2, #header p {
             margin: 0;
             padding: 2vh 2vw;
