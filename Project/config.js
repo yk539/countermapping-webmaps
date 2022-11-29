@@ -243,7 +243,7 @@ var config = {
             onChapterExit: []
         },
             {
-            id: 'interlude',
+            id: '1-10',
             alignment: 'center',
             hidden: false,
             title: 'Current State in SMA',
@@ -343,8 +343,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Planning a trip',
-            image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-            description: "<i>It's a little disappointing that I have to ‘investigate’ and plan everything in advance even if I just want to go out and play on the spur of the moment. (So-Hyeon, 22)</i> <p> Planning for mobility and transportation is more necessary for the individuals with disabilities than for people without disabilities.Because there are numerous considerations from the existence of accessible ramps to provide any guide services. </P>",
+            //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            description: "<i>It's a little disappointing that I have to ‘investigate’ and plan everything in advance even if I just want to go out and play on the spur of the moment. (So-Hyeon, 22)<p>I use Street View function in map apps to spot the building's lamp or call the restaurant directly to clarify. (Min-Gyu, 30) </i> <p> Planning for mobility and transportation is more necessary for the individuals with disabilities than for people without disabilities. Because there are numerous considerations from the existence of accessible ramps to provide any guide services. </P>",
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
@@ -510,11 +510,30 @@ var config = {
             onChapterExit: []
         },
         {
+            id: '9-identifier',
+            alignment: 'right',
+            hidden: false,
+            title: 'Mi-Young, 53',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2032.MP4?raw=true',
+            description: 'Her commute is usually consisted of <b> Rolling, Taking Elevator, and Taking Subway</b> She says even the vollard in the sidewalk is sometimes annyoing to avoid. The electric wheelchair may be seen being rocked by urban structures such as braille blocks.',
+            location: {
+              center: [126.92288, 37.50216],
+              zoom: 14.33,
+              pitch: 65.13,
+              bearing: 50.90
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
             id: '8-identifier',
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
-            video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_2052.MP4?raw=true',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2042.MP4?raw=true',
             description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
             location: {
               center: [126.92288, 37.50216],
@@ -528,13 +547,13 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: '9-identifier',
+                {
+            id: '8-identifier',
             alignment: 'right',
             hidden: false,
-            title: 'Mi-Young, 53',
-            //image: 'images/IMG_2042.gif',
-            description: 'TBD with Video',
+            //title: 'Mi-Young, 53',
+            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3QhlZcUmNQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            description: 'Even she points out using the lift in subway is uncomfortable because it makes sound so that she could get unwanted attentions.',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,
@@ -548,11 +567,49 @@ var config = {
             onChapterExit: []
         },
         {
+            id: 'discussion-identifier',
+            alignment: 'center',
+            hidden: false,
+            title: 'For Future Trips',
+            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            description: '<b> How they Pursue Travel for All</b> <p> In the movements that citizens respond to this, they use various approaches from the hard method of protesting to a technical approach.</p>',
+            location: {
+              center: [127.17867, 37.52585],
+              zoom: 8.86,
+              pitch: 0.00,
+              bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+            {
+                id:'discussion1-identifier',
+            alignment: 'center',
+            hidden: false,
+            //title: 'For Future Trips',
+            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            description: '<b> How they Pursue Travel for All</b> <p> In the movements that citizens respond to this, they use various approaches from the hard method of protesting to a technical approach.</p>',
+            location: {
+              center: [127.17867, 37.52585],
+              zoom: 8.86,
+              pitch: 0.00,
+              bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        
+        {
             id: 'conclusion-identifier',
             alignment: 'right',
             hidden: false,
             title: 'Whats Next?',
-            //image: 'images/IMG_2042.gif',
             description: 'They are restricted from traveling alone due to information and economic restrictions and uncountable considerations. So they should have accompany for many reasons.Even while there are some changes in physical situations, the system is not keeping up.This leads to the third point. According to the research, paratransit cab drivers, station staff, and service providers have little understanding of individuals with disabilities. Last but not least, because of these constraints, it is critical to investigate and develop more dependable and personalized alternatives for all types of disability.',
             location: {
               center: [127.17867, 37.52585],

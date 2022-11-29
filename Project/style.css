@@ -125,7 +125,7 @@
         video {
             margin-left: 3vw;
             width:90%;
-            transform: translate(-50%);
+            transform: translate(-10%);
         }
         .hidden {
             visibility: hidden;
