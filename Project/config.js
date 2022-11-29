@@ -242,6 +242,26 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
+        {
+            id: '1-5',
+            alignment: 'left',
+            hidden: false,
+           title: 'Local governments Trials to improve mobility rights',
+            image: 'https://image.news1.kr/system/photos/2019/8/20/3783358/article.jpg/dims/optimize',
+            description: "Government's own map showing slope <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction.",
+            location: {
+                center: [126.88008557046724,37.61938965015629],
+zoom: 12.06,
+pitch: 4.00,
+bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        
             {
             id: '1-10',
             alignment: 'center',
@@ -457,7 +477,7 @@ var config = {
             hidden: false,
             title: 'Minho, 30 ',
             video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_1920.MP4?raw=true',
-            description: 'TBD with Video',
+            description: '',
             location: {
                 center: [126.97176, 37.57629],
                 zoom: 15.86,
@@ -496,7 +516,7 @@ var config = {
             hidden: false,
             title: 'Jae-Woo, 24',
             //image: 'images/IMG_1956.jpg',
-            description: 'TBD with video',
+            description: '',
             location: {
                 center: [126.97750, 37.49277],
                 zoom: 12.08,
@@ -536,10 +556,10 @@ var config = {
             video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2042.MP4?raw=true',
             description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
             location: {
-              center: [126.92288, 37.50216],
-              zoom: 14.33,
-              pitch: 65.13,
-              bearing: 50.90
+              center: [126.91686, 37.52892],
+zoom: 17.98,
+pitch: 62.50,
+bearing: 106.40
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -552,7 +572,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             //title: 'Mi-Young, 53',
-            video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/3QhlZcUmNQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            video: 'https://youtu.be/3QhlZcUmNQs',
             description: 'Even she points out using the lift in subway is uncomfortable because it makes sound so that she could get unwanted attentions.',
             location: {
               center: [126.92288, 37.50216],
@@ -571,7 +591,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'For Future Trips',
-            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            //image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
             description: '<b> How they Pursue Travel for All</b> <p> In the movements that citizens respond to this, they use various approaches from the hard method of protesting to a technical approach.</p>',
             location: {
               center: [127.17867, 37.52585],
@@ -587,10 +607,10 @@ var config = {
         },
             {
                 id:'discussion1-identifier',
-            alignment: 'center',
+            alignment: 'right',
             hidden: false,
             //title: 'For Future Trips',
-            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            //image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
             description: '<b> How they Pursue Travel for All</b> <p> In the movements that citizens respond to this, they use various approaches from the hard method of protesting to a technical approach.</p>',
             location: {
               center: [127.17867, 37.52585],
@@ -604,7 +624,25 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        
+        {
+            id:'discussion1-identifier',
+            alignment: 'right',
+            hidden: false,
+            //title: 'For Future Trips',
+            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            description: '<b> Counter mapping </b> <p> Muui developed the transfer map for the wheelchair users. </p>',
+            location: {
+              center: [126.98615, 37.57684],
+              zoom: 18.11,
+              pitch: 4.00,
+              bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
         {
             id: 'conclusion-identifier',
             alignment: 'right',
