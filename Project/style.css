@@ -109,14 +109,14 @@
             font-family: 'Titillium Web', sans-serif;
         }
         #interlude {
-            width: 90vw;
-            height: 50vh;
+            width: 30vw;
+            height: 30vh;
         }
         #interlude p{
             font-size: 1.2vh;
             text-align: justify;
-            margin-left: 34vw;
-            margin-right: 34vw;
+            margin-left: vw;
+            margin-right: vw;
             background-color: : white;
             Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
