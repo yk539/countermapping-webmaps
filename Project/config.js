@@ -51,11 +51,7 @@ var config = {
             callback: '',
             onChapterEnter: [
             {
-                layer : 'two-districts-bs88rp',
-                opacity: 0,
-            },
-            {
-                layer: 'Quick Charger - wheelchair',
+                layer: 'Routes',
                 opacity: 0,
             },
             {
@@ -63,43 +59,65 @@ var config = {
                 opacity: 0,
             },
             {
+                layer: 'iso-elvt-west',
+                opacity: 0,
+            },
+            {
+                layer: 'Lift-subway',
+                opacity: 0,
+            },            
+            {
+                layer : 'two-districts-bs88rp',
+                opacity: 0,
+            },
+
+            {
                 layer: 'Iso_Lift',
                 opacity: 0,
             },
-            {
-                layer: 'Iso_Elvt',
-                opacity: 0,
-            },
+
             {
                 layer: 'Seoul -number of PWD',
                 opacity: 0.7,
+            },
+            {
+                layer: 'Seoul',
+                opacity: 0,
             }
             ],
             onChapterExit: [
-            { layer : 'two-districts-bs88rp',
-                opacity: 0,},
             {
                 layer: 'Routes',
                 opacity: 0,
             },
             {
-                layer: 'Quick Charger - wheelchair',
-                opacity: 0,
-            },
-            {
                 layer: 'Elevator-subway',
                 opacity: 0,
             },
             {
+                layer: 'iso-elvt-west',
+                opacity: 0.5,
+            },
+            {
+                layer: 'Lift-subway',
+                opacity: 0,
+            },            
+            {
+                layer : 'two-districts-bs88rp',
+                opacity: 0,
+            },
+
+            {
                 layer: 'Iso_Lift',
                 opacity: 0,
             },
-            {
-                layer: 'Iso_Elvt',
-                opacity: 0.7,
-            },
+
             {
                 layer: 'Seoul -number of PWD',
+                opacity: 0,
+            },
+            {
+                layer: 'Seoul',
                 opacity: 0.7,
             }
             ]
