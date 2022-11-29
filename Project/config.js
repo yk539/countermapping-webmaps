@@ -205,7 +205,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '1-5',
+            id: '1-9',
             alignment: 'left',
             hidden: false,
             title: 'Current Situation of Subway Accessibility',
@@ -273,8 +273,8 @@ var config = {
             id: '1-7',
             alignment: 'center',
             hidden: false,
-            title: 'Research Direction',
-            description: "• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of disabled people face?",
+            title: 'Research Question',
+            description: "• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?",
             location: {
                 center: [127.00313, 37.56275],
                 zoom: 11.00,
@@ -295,11 +295,11 @@ var config = {
             onChapterExit: []
         },
          {
-            id: '1-7',
+            id: '1-8',
             alignment: 'center',
             hidden: false,
             title: 'Methodology',
-            description: "• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of disabled people face?",
+            description: "•",
             location: {
                 center: [127.00313, 37.56275],
                 zoom: 11.00,
@@ -340,11 +340,11 @@ var config = {
         },
         {
             id: '2-1',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             title: 'Planning a trip',
             image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-            description: 'Planning for mobility and transportation is more necessary for the disabled than for non-impaired people. When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings. Lastly, A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture.',
+            description: "<i>It's a little disappointing that I have to ‘investigate’ and plan everything in advance even if I just want to go out and play on the spur of the moment. (So-Hyeon, 22)</i> <p> Planning for mobility and transportation is more necessary for the individuals with disabilities than for people without disabilities.Because there are numerous considerations from the existence of accessible ramps to provide any guide services. </P>",
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
@@ -359,11 +359,11 @@ var config = {
         },
         {
             id: '2-2',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             //title: 'Planning a trip',
             image : 'https://img.freepik.com/premium-vector/disabled-people-community-service-vector-illustration-flat-people-character-help-each-other-talk-support-together-man-with-leg-prosthesis_109722-3216.jpg',
-            description: '<b> Source of Travel Information<b><p> When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so I check with my colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings.',
+            description: '<b> Source of Travel Information<b><p> When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so they check with their colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings.',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
@@ -381,7 +381,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             //title: 'Planning a trip',
-            description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. #They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center.',
+            description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center.',
             image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
             location: {
                center: [127.16920, 37.55083],
@@ -397,7 +397,7 @@ var config = {
         },
         {
             id: '5-1-identifier',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
             description: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
             //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
@@ -433,7 +433,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '6-identifier',
+            id: '2-2',
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
