@@ -11,12 +11,26 @@ var config = {
     use3dTerrain: true, //set true for enabling 3D maps.
     title: 'Revealing the invisible challenges of pedestrians with disability',
     para1: "Since December 2021, throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination (SADD) has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. The Seoul metropolitan area, covering 12.6 percent of the Republic of Korea's land area, is home to 50.25 percent of the country’s population. People with disabilities are increasingly seen as particularly vulnerable pedestrians in this area, according to statistics. Being among the most vulnerable pedestrians, this study focused on the rights to mobility for those with disabilities. It investigated at the circumstances under which they might lead a stable and safe life in the urban area. Twenty people with disabilities participated in semi-structured in-depth interviews for qualitative research in order to conduct a current situation assessment and learn directly about the challenges of the most vulnerable pedestrians in the Seoul metropolitan area.",
-    subtitle: '  Focusing on Seoul, the Republic of Korea',
+    subtitle: 'Focusing on Seoul, the Republic of Korea',
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source',
     chapters: [
             {
-            id: '1-1Chapter',
+            id: 'Chapter1_0',
+            alignment: 'left',
+            hidden: false,
+            title: 'Seoul',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20population.png?raw=true',
+            description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 9.00,
+                pitch: 12.50,
+                bearing: 0.00
+            }
+           } ,
+            {
+            id: 'Chapter1-1',
             alignment: 'center',
             hidden: false,
             title: 'Why Seoul?',

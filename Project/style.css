@@ -49,6 +49,14 @@
             height: auto;
 
         }
+        #Chapter1_0 img{
+             width: 20vw;
+            height: auto;
+        }
+         #Chapter1_0 {
+            height: 40vh;
+            width: 30vw;
+        }
         #Chapter1_10 {
             margin: auto;
             text-align: center;
