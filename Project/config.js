@@ -397,7 +397,7 @@ var config = {
             hidden: false,
             //title: 'Current Situation of Subway Accessibility-isochorne',
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend1.png?raw=true',
-            description: ' <b>Subway Station Accessibility<b><p> With OSR isochrone features, we may see the accessibility of subway facilities with wheelcair in 5, 10, and 15 minutes. ',
+            description: ' <b>Subway Station Accessibility<b><p> With OSR isochrone features, we may see the accessibility of subway facilities with wheelcair in 5, 10, and 15 minutes.This will be compared later with the radius of people without disabilities. ',
             location: {
                 center: [126.87411, 37.56492],
                 zoom: 9.96,
