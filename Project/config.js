@@ -149,7 +149,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
-            description: "Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population",
+            description: "Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population. On the other hand, those with the most population with disabilities show a deep blue as Nowon-gu and Gangseo-gu.",
             location: {
                  center: [126.77232, 37.55733],
                 zoom: 9.52,
@@ -514,7 +514,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Research Direction',
-            description: "<b>Question</b><p>• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?<p><b>Methodology: Qualitative></b><p> Participant observation, interviews, and news analysis <p>First-hand information was collected through participant observation of PWD’s daily lives in Seoul, and interviews with the disabled communities. Accordingly, we will use their footage that has already been featured in the news or other media in a manner that preserves their copyright. We want to supplement the missing information in the data-oriented mapping process, especially the invisible challenges of vulnerable pedestrians which cannot be presented by data.</p>",
+            description: "<b>Question</b><p>• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?<p><b>Methodology: Qualitative</b><p> Participant observation, interviews, and news analysis <p>First-hand information was collected through participant observation of PWD’s daily lives in Seoul, and interviews with the disabled communities. Accordingly, we will use their footage that has already been featured in the news or other media in a manner that preserves their copyright. We want to supplement the missing information in the data-oriented mapping process, especially the invisible challenges of vulnerable pedestrians which cannot be presented by data.</p>",
             location: {
                 center: [126.91233, 37.60061],
                 zoom: 14.32,
@@ -679,7 +679,7 @@ var config = {
             hidden: false,
             //title: 'Planning a trip',
             description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center. The majority of participants with visual impairments have engaged with this Sang-il-dong local welfare centers because they provide these services.',
-            image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+            image : 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/mobilityindtructor.jpg?raw=true',
             location: {
                center: [127.16920, 37.55083],
                zoom: 17.00,
