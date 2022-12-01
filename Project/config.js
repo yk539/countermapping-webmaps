@@ -1,8 +1,8 @@
 var config = {
     style: 'mapbox://styles/yk539/cla7m7hxd000014s19b9kmzt8',
     accessToken: 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA',
-    showMarkers: false,
-    markerColor: 'red',
+    showMarkers: true,
+    markerColor: '#000080',
     //projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
@@ -15,6 +15,20 @@ var config = {
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source',
     chapters: [
+//             {
+//             id: 'Chapter0_0',
+//             alignment: 'center',
+//             hidden: false,
+//             title: 'Seoul',
+//             //image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20population.png?raw=true',
+//             //description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
+//             location: {
+//                 center: [126.67407, 36.59867],
+// zoom: 6.85,
+// pitch: 0.00,
+// bearing: 0.00
+//             }
+//            },
             {
             id: 'Chapter1_0',
             alignment: 'left',
@@ -23,10 +37,10 @@ var config = {
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20population.png?raw=true',
             description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
             location: {
-                center: [127.00313, 37.56275],
-                zoom: 9.00,
-                pitch: 12.50,
-                bearing: 0.00
+                center: [126.67407, 36.59867],
+zoom: 6.85,
+pitch: 0.00,
+bearing: 0.00
             }
            } ,
             {
@@ -35,95 +49,26 @@ var config = {
             hidden: false,
             title: 'Why Seoul?',
             image: '',
-            description: 'Seoul is the capital city of South Korea with high population density. The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018. More than 8.46 thousand people with disabilities live in the deep blue areas.',
+            description: 'The number of people with disabilities in this area was point forty-five million (453,031) in 2001, but it has more than doubled to one milion1,082,077 in 2018. More than 8.46 thousand people with disabilities live in the deep blue areas.',
             location: {
                 center: [127.00313, 37.56275],
                 zoom: 9.00,
                 pitch: 12.50,
                 bearing: 0.00
             },
-            mapAnimation: 'flyTo',
+             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [
-            {
-                layer: 'Routes',
-                opacity: 0,
-            },
-            {
-                layer: 'Elevator-subway',
-                opacity: 0,
-            },
-            {
-                layer: 'iso-elvt-west',
-                opacity: 0,
-            },
-            {
-                layer: 'Lift-subway',
-                opacity: 0,
-            },            
-            {
-                layer : 'Two-districts',
-                opacity: 0,
-            },
-
-            {
-                layer: 'Iso_Lift',
-                opacity: 0,
-            },
-
-            {
-                layer: 'Seoul -number of PWD',
-                opacity: 0.7,
-            },
-            {
-                layer: 'Seoul',
-                opacity: 0,
-            }
-            ],
+            onChapterEnter: [],
             onChapterExit: []
-            // {
-            //     layer: 'Routes',
-            //     opacity: 0,
-            // },
-            // {
-            //     layer: 'Elevator-subway',
-            //     opacity: 0,
-            // },
-            // {
-            //     layer: 'iso-elvt-west',
-            //     opacity: 0.0,
-            // },
-            // {
-            //     layer: 'Lift-subway',
-            //     opacity: 0,
-            // },            
-            // {
-            //     layer : 'Two-districts',
-            //     opacity: 0,
-            // },
-
-            // {
-            //     layer: 'Iso_Lift',
-            //     opacity: 0,
-            // },
-
-            // {
-            //     layer: 'Seoul -number of PWD',
-            //     opacity: 0,
-            // },
-            // {
-            //     layer: 'Seoul',
-            //     opacity: 0.7,
-            // }
-            // ]
+ 
         },
-        { id: 'Chapter1_1',
+        {
+            id: 'Chapter1_2',
             alignment: 'left',
             hidden: false,
-            //title: 'Why Seoul?',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
-            description: 'Seoul has 25 districts and the number of people with disabilities is - ',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20disability.png?raw=true',
+            description: 'Over 42 percent of people with disabilities nationwide live in Seoul. Also, the number of people with disabilities over the age of 65 is rapidly increasing.',
             location: {
                 center: [127.00313, 37.56275],
                 zoom: 9.00,
@@ -136,6 +81,23 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
+        { id: 'Chapter1_3',
+            alignment: 'left',
+            hidden: false,
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
+            description: 'Seoul has 25 districts and the number of people with disabilities is ',
+            location: {
+                center: [127.00313, 37.56275],
+                zoom: 9.00,
+                pitch: 12.50,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },         
         {
             id: '1-2',
             alignment: 'left',
