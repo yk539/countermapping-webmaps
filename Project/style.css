@@ -134,6 +134,10 @@
             Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
         }
+        #Chapter2-4 img {
+             width: 20vw;
+            height: auto;
+        }
         #interlude {
             width: 30vw;
             height: 30vh;

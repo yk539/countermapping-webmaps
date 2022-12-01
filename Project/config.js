@@ -149,7 +149,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend.png?raw=true',
-            description: 'Seoul has 25 districts and the number of people with disabilities is ',
+            description: "Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population",
             location: {
                  center: [126.77232, 37.55733],
                 zoom: 9.52,
@@ -239,7 +239,7 @@ var config = {
 //             callback: '',
 //             onChapterEnter: [
 //      { layer: 'interview', opacity: 0 },                     
-        { layer: 'jae-woo-test1', opacity: 0 },    
+//        { layer: 'jae-woo-test1', opacity: 0 },    
 //             { layer: 'min-ho-test1', opacity: 0 },
 //             { layer: 'mi-young-test1', opacity: 0 },
 //             { layer: 'iso-elvt-merged', opacity: 0 },
@@ -250,7 +250,7 @@ var config = {
 //             ],
 //             onChapterExit: [
 //      { layer: 'interview', opacity: 0 },                     
-        { layer: 'jae-woo-test1', opacity: 0 },    
+//        { layer: 'jae-woo-test1', opacity: 0 },    
 //             { layer: 'min-ho-test1', opacity: 0 },
 //             { layer: 'mi-young-test1', opacity: 0 },
 //             { layer: 'iso-elvt-merged', opacity: 0 },
@@ -397,7 +397,7 @@ var config = {
             hidden: false,
             //title: 'Current Situation of Subway Accessibility-isochorne',
             //image: 'LEGEND',
-            description: '<b>Subway Station Accessibility<b><p>5, 10 min with wheelchair.Map explanation ',
+            description: ' <b>Subway Station Accessibility<b><p> With OSR isochrone features, we may see the accessibility of subway facilities with wheelcair in 5, 10, and 15 minutes. ',
             location: {
                 center: [126.87411, 37.56492],
                 zoom: 9.96,
@@ -436,7 +436,7 @@ var config = {
             hidden: false,
             title: 'Current Seoul Situation',
             //image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/WHY.png?raw=true',
-            description: "The growing number of people with disabilities <p> Lack of effectiveness of laws and regulations <p> Research on people with disabilities is slow<p>SADD subway protests increase negative image",
+            description: "The growing number of people with disabilities  <p> Topographical challenges with hills and mountains <p>SADD subway protests increase negative image.",
             location: {
                 center: [126.87411, 37.56492],
                 zoom: 9.96,
@@ -477,10 +477,10 @@ var config = {
             image: 'https://image.news1.kr/system/photos/2019/8/20/3783358/article.jpg/dims/optimize',
             description: "Government's own map showing slope <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction.",
             location: {
-                center: [126.91233, 37.60061],
-                zoom: 14.32,
-                pitch: 0.00,
-                bearing: 0.00
+            center: [126.91728877441999,37.59992589082315],
+            zoom: 12.06,
+            pitch: 4.00,
+            bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -514,7 +514,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Research Direction',
-            description: "<b>Question</b><p>• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?<p><b>Methodology</b><p> blah blah</p>",
+            description: "<b>Question</b><p>• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?<p><b>Methodology: Qualitative></b><p> Participant observation, interviews, and news analysis <p>First-hand information was collected through participant observation of PWD’s daily lives in Seoul, and interviews with the disabled communities. Accordingly, we will use their footage that has already been featured in the news or other media in a manner that preserves their copyright. We want to supplement the missing information in the data-oriented mapping process, especially the invisible challenges of vulnerable pedestrians which cannot be presented by data.</p>",
             location: {
                 center: [126.91233, 37.60061],
                 zoom: 14.32,
@@ -559,7 +559,7 @@ var config = {
             hidden: false,
             title: 'Interviews with the people with disability',
             image: 'https://raw.githubusercontent.com/yk539/countermapping-webmaps/main/Project/images/IMG_2028.JPG',
-            description: 'There have been 20 interviews with individuals with disabilities so far. Most of them were visually imapired, two were physically impaired with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel bevaior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
+            description: 'There have been 20 interviews with individuals with disabilities so far. Most of them have visually imapairment, two have physically impairment d with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel behavior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
             location: {
                 center: [126.87411, 37.56492],
                 zoom: 9.96,
@@ -634,7 +634,7 @@ var config = {
             ]
         },
         {
-            id: 'Chapter2-2',
+            id: 'Chapter2-4',
             alignment: 'center',
             hidden: false,
             //title: 'Planning a trip',
@@ -679,8 +679,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             //title: 'Planning a trip',
-            description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center.',
-            image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',//??
+            description: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center. The majority of participants with visual impairments have engaged with this Sang-il-dong local welfare centers because they provide these services.',
+            image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
             location: {
                center: [127.16920, 37.55083],
                zoom: 17.00,
@@ -739,8 +739,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'On a trip',
-            //image: 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-            description: 'We devided into <b> Walk/Roll, Subway and Paratransit taxi<b>.<p> From this part, we will use the semi-structured interviews and go-along interviews materials.<p> In addition to public transportation such as cars (63%), intercity and express buses (10.7%), and trains (8.1%), disabled taxis (8.1%) and special transportation (5.3%) were also highly used.',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Graph.png?raw=true',
+            description: "We divided into <b> Walk/Roll, Subway and Paratransit taxi<b>. <p> According to data from Korea's Ministry of Land, Infrastructure, and Transport from last August, the transportation vulnerable in Seoul, including the people with disabilities, use the modes of transportation depicted in the graph above.<p>From this part, we will use the semi-structured interviews and go-along interviews materials.",
             location: {
                center: [127.16920, 37.55083],
                zoom: 17.00,
@@ -779,7 +779,7 @@ var config = {
             hidden: false,
             title: 'Minho, 30 ',
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1917.JPG?raw=true',
-            description: 'Minho, is visually impaired and this route was his way home from work. He is using the cane but needs accompany who can guide him for the right direction. This time, he was with his father but usually with the personal assist service person. I walked from the subway station to the house. The same route, map says takes 9 mins but we spent our time walking 15mins.',
+            description: 'Minho, is visually impaired and this route was his way home from work. He is using the cane but needs accompany who can guide him for the right direction. I walked from the subway station to the house. The same route, map says takes 9 mins but we spent our time walking 15mins',
             location: {
                center: [126.96331, 37.57973],
                 zoom: 14.29,
@@ -817,7 +817,7 @@ var config = {
             hidden: false,
             title: 'Minho, 30 ',
             video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_1920.MP4?raw=true',
-            description: '',
+            description: 'This time, he was with his father but usually with the personal assist service person.During the interview, he mentioned the tactile blaocks problems of not being able to locate effectively, as well as the concerns with shared bicycles being dumped on the sidewalks',
             location: {
                 center: [126.973, 37.578],
                 zoom: 16.44,
@@ -894,7 +894,7 @@ var config = {
             hidden: false,
             title: 'Mi-Young, 53',
             video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2042.MP4?raw=true',
-            description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.Also, she mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station',
+            description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.',
             location: {
               center: [126.91686, 37.52892],
                 zoom: 17.98,
@@ -933,7 +933,7 @@ var config = {
             hidden: false,
             //title: 'Mi-Young, 53',
             //video: 'https://youtu.be/3QhlZcUmNQs',
-            description: 'Even she points out using the lift in subway is uncomfortable because it makes sound or extremly dangerous. There are several cases <a href = "https://youtu.be/3QhlZcUmNQs"></a> about the accidents',
+            description: 'he mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station. Even she points out using the lift in subway is uncomfortable because it makes very loud sound or extremally dangerous. There are several cases about the accidents (https://youtu.be/3QhlZcUmNQs).',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,
@@ -1007,12 +1007,12 @@ var config = {
             ]
         },
              {
-            id: 'interlude',
+            id: 'interlude3-3',
             alignment: 'left',
             hidden: false,
             title: 'Jae-Woo, 24',
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1956.JPG?raw=true',
-            description: 'explain the paratransit system',
+            description: ' Currently we have three different types of paratransit taxis. One for wheelchair users and two for other types but mostly for riders with visually impairment. Eventhough they would like to take usual taxis sometimes, some drivers refused to take them. Also, the Reason why they choose this paratransit taxi or cab system is safety. Not only on the car but also before and after, driver tends to guide them to the entrance and exit of the location on foot. But, there are some incidents of overcharging according to few participants. Consequently, they must pay attention to the real-time location data from apps when using earphones.',
             location: {
                 center: [126.97750, 37.49277],
                 zoom: 12.08,
@@ -1090,7 +1090,7 @@ var config = {
             hidden: false,
             title: 'Hightlights of interviews',
             //image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1956.JPG?raw=true',
-            description: 'yj',
+            description: 'It was found that their emotional and mental elements could become a major barrier, away from the fact that these disabilities only hindered the expansion of the travel experience due to physical and environmental limitations.',
             location: {
                 center: [126.98720, 37.51853],
                 zoom: 9.94,
@@ -1166,14 +1166,14 @@ var config = {
              id:'discussion1-identifier',
             alignment: 'center',
             hidden: false,
-            //title: 'For Future Trips',
-             image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
-            description: '<b> Counter mapping </b> <p>Braille Map explanation. </p>',
+            title: 'Counter mapping',
+            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            description: '<b> Braille Map </b> <p>Thanks to the efforts of the Sillim Welfare Center’s members, the Samkak-ji station has the one shows entire Seoul subway system. However, many visually impaired people are unaware of this. In one of the interviews, Su Chan said that it is disappointing that not many stations carry it. </p>',
             location: {
-                center: [126.98720, 37.51853],
-                zoom: 9.94,
-                pitch: 37.00,
-                bearing: 0.00
+              center: [127.17867, 37.52585],
+              zoom: 8.86,
+              pitch: 0.00,
+              bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1195,15 +1195,15 @@ var config = {
              id:'discussion1-identifier',
             alignment: 'center',
             hidden: false,
-            //title: 'For Future Trips',
+            title: 'Counter mapping',
              image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
-            description: '<b> Counter mapping </b> <p> Muui developed the transfer map for the wheelchair users. </p>',
+            description: '<b> Muui Transfer Map </b> <p> The first is a 'Muui' transfer and tour map. They illustrate the most efficient approach to transfer and travel between stations. People with and without mobility disabilities collaborate to report and write down findings from the monitoring stage. </p>',
             location: {
-                center: [126.98720, 37.51853],
-                zoom: 9.94,
-                pitch: 37.00,
-                bearing: 0.00
-            },
+              center: [127.17867, 37.52585],
+              zoom: 8.86,
+              pitch: 0.00,
+              bearing: 0.00
+          },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
@@ -1225,7 +1225,25 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Whats Next?',
-            description: 'They are restricted from traveling alone due to information and economic restrictions and uncountable considerations. So they should have accompany for many reasons.Even while there are some changes in physical situations, the system is not keeping up.This leads to the third point. According to the research, paratransit cab drivers, station staff, and service providers have little understanding of individuals with disabilities. Last but not least, because of these constraints, it is critical to investigate and develop more dependable and personalized alternatives for all types of disability.',
+            description: 'The government must conduct detailed qualitative study, not just quantitative research, on the transportation disadvantaged. Furthermore, these consideration must be included in the transportation evaluation measures established by the local administration. And, by actively fostering counter-mapping efforts like these, the government should reflect their views as well. Last but not least, because of these constraints, it is critical to investigate and develop more dependable and personalized alternatives for all types of disability.',
+            location: {
+                center: [126.98720, 37.51853],
+                zoom: 9.94,
+                pitch: 37.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+                {
+            id: 'limitation-identifier',
+            alignment: 'center',
+            hidden: false,
+            title: 'Next research plan',
+            description: 'We could tell there was a difference in perspective between the visually impaired and wheelchair users, and each favored mode of mobility and had slightly different opinions. We need to figure out how to display these elements with more mapping and have them reflect in the end output.',
             location: {
                 center: [126.98720, 37.51853],
                 zoom: 9.94,
