@@ -11,7 +11,7 @@ var config = {
     para1: "Since December 2021, throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination (SADD) has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. The Seoul metropolitan area, covering 12.6 percent of the Republic of Korea's land area, is home to 50.25 percent of the country’s population. People with disabilities are increasingly seen as particularly vulnerable pedestrians in this area, according to statistics. Being among the most vulnerable pedestrians, this study focused on the rights to mobility for those with disabilities. It investigated at the circumstances under which they might lead a stable and safe life in the urban area. Twenty people with disabilities participated in semi-structured in-depth interviews for qualitative research in order to conduct a current situation assessment and learn directly about the challenges of the most vulnerable pedestrians in the Seoul metropolitan area.",
     subtitle: 'Focusing on Seoul, the Republic of Korea',
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
-    footer: 'Source',
+    footer: 'Source: Oh, Y.-J., & Yun, K.-S. (2012). Urban Planning Factors for Socially Underprivileged Groups- Focused on the Urban Planning Code in the National Land Planning and Use Act. Journal of the Urban Design Institute of Korea, 13(4), 51–64. DBPIA.<p>Seoul  Amenities for People with Disabilities Statistics. (2022, April 11). <p>Seoul Government. (2022, July 20). Status of Disabled Persons in Seoul (By Type/Neighborhood) Statistics. <p>Seoul launches 3D map “S-Map” mobile version... Lost cultural assets and tourist attractions in VR: Smart City Comprehensive Portal. (2021, October 27). SMART CITY KOREA',
     chapters: [
 //             {
 //             id: 'Chapter0_0',
@@ -470,17 +470,17 @@ var config = {
             ]
         },
         {
-            id: '1-5',
+            id: '1-5-1',
             alignment: 'left',
             hidden: false,
            title: 'Local governments Trials to improve mobility rights',
             image: 'https://image.news1.kr/system/photos/2019/8/20/3783358/article.jpg/dims/optimize',
             description: "Government's own map showing slope <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction.",
             location: {
-            center: [126.91728877441999,37.59992589082315],
-            zoom: 12.06,
-            pitch: 4.00,
-            bearing: 0.00
+            center: [126.91233, 37.60061],
+                zoom: 15.32,
+                pitch: 0.00,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -558,7 +558,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Interviews with the people with disability',
-            image: 'https://raw.githubusercontent.com/yk539/countermapping-webmaps/main/Project/images/IMG_2028.JPG',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/interview%20guide.png?raw=true',
             description: 'There have been 20 interviews with individuals with disabilities so far. Most of them have visually imapairment, two have physically impairment d with electric wheelchair, and one was a combined vision and hearing loss person. And the interviews were conducted by their  travel behavior in Seoul metropolitan area.Moreover, the go-along interviews ware followed with three individuals with disability.',
             location: {
                 center: [126.87411, 37.56492],
@@ -578,8 +578,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
-                // new layer of 20 interviewees
+            { layer: 'Seoul', opacity: 0.2 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0.8 }, 
@@ -590,7 +589,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.2 } 
                 // same, opacity: 0
             ]
         },
@@ -619,7 +618,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.2} 
             ],
             onChapterExit: [
              { layer: 'interview', opacity: 0.8 }, 
@@ -630,7 +629,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.2 } 
             ]
         },
         {
@@ -652,7 +651,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-             { layer: 'interview', opacity: 0.8 }, 
+             { layer: 'interview', opacity: 0 }, 
                 { layer: 'jae-woo-test1', opacity: 0 },    
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
@@ -660,7 +659,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.3 } 
             ],
             onChapterExit: [
              { layer: 'interview', opacity: 0 }, 
@@ -671,7 +670,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.3 } 
             ]
         },
         {
@@ -698,7 +697,7 @@ var config = {
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.7 },
             { layer: 'Seoul', opacity: 0 } 
                 //png to highlight the building
             ],
@@ -710,7 +709,7 @@ var config = {
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.7 },
             { layer: 'Seoul', opacity: 0 } 
                 //png to highlight the building
                 
@@ -742,10 +741,10 @@ var config = {
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Graph.png?raw=true',
             description: "We divided into <b> Walk/Roll, Subway and Paratransit taxi<b>. <p> According to data from Korea's Ministry of Land, Infrastructure, and Transport from last August, the transportation vulnerable in Seoul, including the people with disabilities, use the modes of transportation depicted in the graph above.<p>From this part, we will use the semi-structured interviews and go-along interviews materials.",
             location: {
-               center: [127.16920, 37.55083],
-               zoom: 17.00,
-               pitch: 60.00,
-               bearing: -52.00
+               center: [126.98155, 37.50045],
+                zoom: 11.99,
+                pitch: 49.48,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -759,7 +758,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.7 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 }, 
@@ -770,11 +769,11 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0.7 } 
             ]
         },
         {
-            id: '2-2',
+            id: 'Chpater3-10',
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
@@ -816,8 +815,47 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Minho, 30 ',
-            video: 'https://github.com/yk539/countermapping-webmaps/blob/7db110f48d7c2e97fe37736476af226e33c95a3c/Project/images/IMG_1920.MP4?raw=true',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-mh1.mp4?raw=true',
             description: 'This time, he was with his father but usually with the personal assist service person.During the interview, he mentioned the tactile blaocks problems of not being able to locate effectively, as well as the concerns with shared bicycles being dumped on the sidewalks',
+            location: {
+                center: [126.973, 37.578],
+                zoom: 16.44,
+                pitch: 55.50,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                { layer: 'interview', opacity: 0 },
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0.8 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0 }
+            ],
+            onChapterExit: [
+                { layer: 'interview', opacity: 0 },
+                { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0.8 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0 }
+            ]
+        },
+        {
+            id: 'chapter1-16',
+            alignment: 'left',
+            hidden: false,
+            //title: 'Minho, 30 ',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/cycle.png?raw=true',
+            description: "<b>Electric scooters and shared bicycles are routinely on the sidewalk</b><p>This is a recent issue that has been discussed the most during the interview. With the advancement of technology, it has become simpler for people without disabilities to travel, but for those with disabilities, it is a source of concern and anxiety.It's not just a problem while driving, it's dumped on the road after driving on the sidewalk, causing damage to both the visually and the physically impaired. Not only in physical danger but also emotionally exhausted.",
             location: {
                 center: [126.973, 37.578],
                 zoom: 16.44,
@@ -855,8 +893,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
-            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2032.MP4?raw=true',
-            description: 'Her commute is usually consisted of <b> Rolling, Taking Elevator, and Taking Subway</b> She says even the vollard in the sidewalk is sometimes annyoing to avoid. The electric wheelchair may be seen being rocked by urban structures such as braille blocks.',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-my3.mp4?raw=true',
+            description: 'Mi-young rides the subway in an electric wheelchair. Her commute is usually consisted of <b> Rolling, Taking Elevator, and Taking Subway</b> She says even the vollard in the sidewalk is sometimes annyoing to avoid. The electric wheelchair may be seen being rocked by urban structures such as braille blocks.',
             location: {
               center: [126.96965, 37.52132],
                 zoom: 12.39,
@@ -893,13 +931,13 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Mi-Young, 53',
-            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_2042.MP4?raw=true',
-            description: 'Mi-young rides the subway in an electric wheelchair. She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-my1.mp4?raw=true',
+            description: ' She says she almost usually follows her assistant service person. It shows how she tagged the card. From kakaomap, the route is only take 30 mins but we took 45mins.',
             location: {
-              center: [126.91686, 37.52892],
-                zoom: 17.98,
-                pitch: 62.50,
-                bearing: 106.40
+              center: [126.91833, 37.52820],
+              zoom: 14.41,
+                pitch: 0.00,
+                bearing: 8.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -932,8 +970,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             //title: 'Mi-Young, 53',
-            //video: 'https://youtu.be/3QhlZcUmNQs',
-            description: 'he mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station. Even she points out using the lift in subway is uncomfortable because it makes very loud sound or extremally dangerous. There are several cases about the accidents (https://youtu.be/3QhlZcUmNQs).',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-my2.mp4?raw=true',
+            description: 'She mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station. Even she points out using the lift in subway is uncomfortable because it makes very loud sound or extremally dangerous. There are several cases about the accidents (https://youtu.be/3QhlZcUmNQs).',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,
@@ -966,58 +1004,17 @@ var config = {
             { layer: 'Seoul', opacity: 0 }   
             ]
         },
-        {
-            id: '7-identifier',
-            alignment: 'left',
+         {
+            id: 'Chapter4-1',
+            alignment: 'center',
             hidden: false,
-            title: 'Jae-Woo, 24',
-            image: '',
-                //memo - upload photos
-            description: 'Jaewoo has visual impairments but he was accompanied by his guide dog. He was on his way to work using paratransit taxi. He frequently goes at work very early. Because there is a scarcity of quantity, people must wait till uncertain times. This time, we spent around 40 mins from his house to his workplace.',
-            location: {
-                center: [126.97750, 37.49277],
-                zoom: 12.08,
-                pitch: 66.14,
-                bearing: -10.11
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                { layer: 'interview', opacity: 0 },
-            { layer: 'jae-woo-test1', opacity: 0.8 },    
-            { layer: 'min-ho-test1', opacity: 0 },
-            { layer: 'mi-young-test1', opacity: 0 },
-            { layer: 'iso-elvt-merged', opacity: 0 },
-            { layer: 'elevator-subway', opacity: 0 },
-            { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
-            ],
-            onChapterExit: [
-                { layer: 'interview', opacity: 0 },
-            { layer: 'jae-woo-test1', opacity: 0.8 },    
-            { layer: 'min-ho-test1', opacity: 0 },
-            { layer: 'mi-young-test1', opacity: 0 },
-            { layer: 'iso-elvt-merged', opacity: 0 },
-            { layer: 'elevator-subway', opacity: 0 },
-            { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
-            ]
-        },
-             {
-            id: 'interlude3-3',
-            alignment: 'left',
-            hidden: false,
-            title: 'Jae-Woo, 24',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1956.JPG?raw=true',
+            title: 'Paratransit taxi',
             description: ' Currently we have three different types of paratransit taxis. One for wheelchair users and two for other types but mostly for riders with visually impairment. Eventhough they would like to take usual taxis sometimes, some drivers refused to take them. Also, the Reason why they choose this paratransit taxi or cab system is safety. Not only on the car but also before and after, driver tends to guide them to the entrance and exit of the location on foot. But, there are some incidents of overcharging according to few participants. Consequently, they must pay attention to the real-time location data from apps when using earphones.',
             location: {
-                center: [126.97750, 37.49277],
-                zoom: 12.08,
-                pitch: 66.14,
-                bearing: -10.11
+               center: [126.93316, 37.58357],
+                zoom: 15.18,
+                pitch: 56.98,
+                bearing: -16.52
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1050,13 +1047,54 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Jae-Woo, 24',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1956.JPG?raw=true',
-            description: '',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/paratransit.jpg?raw=true',
+                //memo - upload photos
+            description: 'Jaewoo has visual impairments but he was accompanied by his guide dog. He was on his way to work using paratransit taxi.',
             location: {
-                center: [126.97750, 37.49277],
-                zoom: 12.08,
-                pitch: 66.14,
-                bearing: -10.11
+                center: [126.93316, 37.58357],
+                zoom: 15.18,
+                pitch: 56.98,
+                bearing: -16.52
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                { layer: 'interview', opacity: 0 },
+            { layer: 'jae-woo-test1', opacity: 0.8 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0 }
+            ],
+            onChapterExit: [
+                { layer: 'interview', opacity: 0 },
+            { layer: 'jae-woo-test1', opacity: 0.8 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0 }  
+            ]
+        },
+            
+        {
+            id: 'Chapter4-11',
+            alignment: 'left',
+            hidden: false,
+            title: 'Jae-Woo, 24',
+            video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-jw1.mp4?raw=true',
+            description: "We call this 'Welfare call taxi for the disabled'. It is quite smaller but enough room for two people and a guide dog.He frequently goes at work very early. Because there is a scarcity of quantity, people must wait till uncertain times. This time, we spent around 40 mins from his house to his workplace.",
+            location: {
+                center: [126.87428, 37.54888],
+                zoom: 11.58,
+                pitch: 1.89,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1085,7 +1123,7 @@ var config = {
             ]
         },
          {
-            id: '7-identifier',
+            id: 'sumup',
             alignment: 'center',
             hidden: false,
             title: 'Hightlights of interviews',
@@ -1124,7 +1162,7 @@ var config = {
             ]
         },
         {
-            id: 'discussion-identifier',
+            id: 'discussion-1',
             alignment: 'center',
             hidden: false,
             title: 'For Future Trips',
@@ -1163,17 +1201,17 @@ var config = {
             ]
         },
               {
-             id:'discussion1-identifier',
+             id:'discussion-2',
             alignment: 'center',
             hidden: false,
             title: 'Counter mapping',
-            image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/samgakji%20station.jpg?raw=true',
             description: '<b> Braille Map </b> <p>Thanks to the efforts of the Sillim Welfare Center’s members, the Samkak-ji station has the one shows entire Seoul subway system. However, many visually impaired people are unaware of this. In one of the interviews, Su Chan said that it is disappointing that not many stations carry it. </p>',
             location: {
-              center: [127.17867, 37.52585],
-              zoom: 8.86,
-              pitch: 0.00,
-              bearing: 0.00
+            center: [126.98436, 37.53664],
+            zoom: 14.98,
+            pitch: 0.00,
+            bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1184,25 +1222,33 @@ var config = {
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
             { layer: 'iso-elvt-merged', opacity: 0 },
-            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0.9 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
             { layer: 'Seoul', opacity: 0.6}  
             ],
-            onChapterExit: []
+            onChapterExit: [ { layer: 'interview', opacity: 0 },
+             { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0.0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.9}  ]
         },
             {
-             id:'discussion1-identifier',
+             id:'discussion-3',
             alignment: 'center',
             hidden: false,
             title: 'Counter mapping',
-             image: 'https://t1.daumcdn.net/news/201803/09/hankooki/20180309044458075clls.jpg',
-            description: '<b> Muui Transfer Map </b> <p> The first is a 'Muui' transfer and tour map. They illustrate the most efficient approach to transfer and travel between stations. People with and without mobility disabilities collaborate to report and write down findings from the monitoring stage. </p>',
+             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/muui-2.jpg?raw=true',
+            description: "<b> Muui Transfer Map </b> <p> The first is a 'Muui' transfer and tour map. They illustrate the most efficient approach to transfer and travel between stations. People with and without mobility disabilities collaborate to report and write down findings from the monitoring stage.(https://www.wearemuui.com/265051462286-1) </p>",
             location: {
-              center: [127.17867, 37.52585],
-              zoom: 8.86,
-              pitch: 0.00,
-              bearing: 0.00
+              center: [127.03943, 37.56182],
+                zoom: 18.07,
+                pitch: 28.00,
+                bearing: -36.80
           },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1213,12 +1259,21 @@ var config = {
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
             { layer: 'iso-elvt-merged', opacity: 0 },
-            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0.5 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
             { layer: 'Seoul', opacity: 0.6}  
             ],
-            onChapterExit: []
+            onChapterExit: [
+                { layer: 'interview', opacity: 0 },
+             { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0},
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.6}]
         },
         {
             id: 'conclusion-identifier',

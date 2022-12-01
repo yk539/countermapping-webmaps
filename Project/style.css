@@ -58,19 +58,61 @@
             width: 30vw;
         }
         #Chapter1_10 {
-            margin: auto;
             text-align: center;
-            width: 100%;
-            position: relative;
+            width:25vw;
+            position: center;
             z-index: 5;
-            height: 110vh;
-            background-image: url("https://newmobility.com/wp-content/uploads/2021/06/BlueManDebate.jpg");
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: 100vw 110vh; 
-
+            height: auto;
+            
         }
+        #sumup  {width: 30vw;
+            height: auto;
+        }
+        #discussion-1{width: 30vw;
+            height: auto;
+        }
+        #discussion-2 img {
+             align-content:center;
+             width: 25vw;
+            height: auto;
+        }
+        #discussion-2  {
+             width: 50vw ;
+            height: auto;
+        }
+    #discussion-3  {
+             width: 26vw;
+            height: auto;
+        }
+    #discussion-3 img {
+             width: 20vw;
+            height: auto;
+        }
+        #Chpater3-10 img {
+             width: auto;
+            height: 40vh;
+        }
+        #Chapter4-1 img{
 
+             width: auto;
+            height: 40vh;
+        }
+        #Chapter2-4 {
+             width: 30vw;
+            height: auto;
+        }
+        #Chapter2-4 img{
+             width: 25vw;
+            height: auto;
+        }
+        #identifier-5-2 {
+             width: 40vw;
+            height: auto;
+        }
+        #identifier-5-2 img{
+             width: 20vw;
+            height: auto;
+        }
         #header h1, #header h2, #header p {
             margin: 0;
             padding: 2vh 2vw;
@@ -107,8 +149,8 @@
             padding-top: 2vh;
             padding-bottom: 2vh;
             text-align: center;
-            line-height: 25px;
-            font-size: 13px;
+            line-height: 20px;
+            font-size: 10px;
             position: relative;
             z-index: 5;
             Font-weight:400;
