@@ -138,6 +138,7 @@
             width: 30vw;
             height: 30vh;
         }
+
         #interlude p{
             font-size: 1.2vh;
             text-align: justify;
@@ -146,6 +147,10 @@
             background-color: : white;
             Font-weight:400;
             font-family: 'Titillium Web', sans-serif;
+        }
+        #interlude_2 {
+            width: 100vw;
+            height: auto;
         }
 
         video {

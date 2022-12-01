@@ -1,8 +1,6 @@
 var config = {
     style: 'mapbox://styles/yk539/cla7m7hxd000014s19b9kmzt8',
     accessToken: 'pk.eyJ1IjoieWs1MzkiLCJhIjoiY2w5MDdyZ2ppMHdmYTQwazR0NzV6YW9uYiJ9.nWSA2XNz2ZjtZusursxXcA',
-    showMarkers: true,
-    markerColor: '#000080',
     //projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
@@ -31,6 +29,7 @@ var config = {
 //            },
             {
             id: 'Chapter1_0',
+
             alignment: 'left',
             hidden: false,
             title: 'Seoul',
@@ -43,6 +42,7 @@ pitch: 0.00,
 bearing: 0.00
             }
            } ,
+
             {
             id: 'Chapter1-1',
             alignment: 'center',
@@ -137,7 +137,7 @@ bearing: 0.00
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.7 },
             { layer: 'Seoul', opacity: 0.85 }
             ],
             onChapterExit: [
@@ -469,7 +469,7 @@ bearing: 0.00
         },
            
         {
-            id: 'interlude',
+            id: 'interlude_2',
             alignment: 'center',
             hidden: false,
             title: 'Research Direction',
@@ -594,6 +594,8 @@ bearing: 0.00
             //title: 'Planning a trip',
             image : 'https://img.freepik.com/premium-vector/disabled-people-community-service-vector-illustration-flat-people-character-help-each-other-talk-support-together-man-with-leg-prosthesis_109722-3216.jpg',
             description: '<b> Source of Travel Information<b><p> When asked where they get their information, many interviewers indicate they rely on others around them. They understand how to use the app, but the information is frequently out of date, so they check with their colleagues first. And wheelchair users checked the street view about whether the slope is steep or if there is any ramps to enter the buildings.',
+                showMarkers: true,
+    markerColor: '#000080',
             location: {
                 center: [126.87380, 37.53757],
                 zoom: 10.00,
@@ -871,7 +873,7 @@ bearing: 106.40
             hidden: false,
             //title: 'Mi-Young, 53',
             //video: 'https://youtu.be/3QhlZcUmNQs',
-            description: 'Even she points out using the lift in subway is uncomfortable because it makes sound or extremly dangerous. There are several cases<a href = 'https://youtu.be/3QhlZcUmNQs'>  about the accidents',
+            description: 'Even she points out using the lift in subway is uncomfortable because it makes sound or extremly dangerous. There are several cases <a href = "https://youtu.be/3QhlZcUmNQs"></a> about the accidents',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,
