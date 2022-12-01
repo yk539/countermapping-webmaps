@@ -392,11 +392,11 @@ var config = {
             ]
         },
         {
-            id: '1-5',
+            id: 'Chapter1-17',
             alignment: 'left',
             hidden: false,
             //title: 'Current Situation of Subway Accessibility-isochorne',
-            //image: 'LEGEND',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/legend1.png?raw=true',
             description: ' <b>Subway Station Accessibility<b><p> With OSR isochrone features, we may see the accessibility of subway facilities with wheelcair in 5, 10, and 15 minutes. ',
             location: {
                 center: [126.87411, 37.56492],
