@@ -59,8 +59,25 @@ bearing: 0.00
              mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }
+            ],
+            onChapterExit: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }]
  
         },
         {
@@ -78,8 +95,26 @@ bearing: 0.00
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }
+            ],
+            onChapterExit: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }
+            ]
         },
         { id: 'Chapter1_3',
             alignment: 'left',
@@ -95,8 +130,25 @@ bearing: 0.00
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }
+            ],
+            onChapterExit: [
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.85 }]
         },         
         {
             id: '1-2',
