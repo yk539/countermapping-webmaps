@@ -166,7 +166,7 @@ var config = {
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.7 },
             { layer: 'Seoul', opacity: 0.85 },
             { layer: 'mapbox-satellite-copy', opacity: 0 },
             { layer: 'elevator-subway-copy', opacity: 0 },
