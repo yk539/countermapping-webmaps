@@ -33,7 +33,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Seoul',
-            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20population.png?raw=true',
+            image: 'http://res.heraldm.com/content/image/2022/05/04/20220504000702_0.jpg',
             description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
             location: {
                 center: [125.07462, 36.50732],
@@ -53,7 +53,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -64,7 +69,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }]
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }]
  
            } ,
 
@@ -93,7 +103,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -104,7 +119,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }]
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }]
  
         },
         {
@@ -131,7 +151,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -142,7 +167,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 }
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ]
         },
         { id: 'Chapter1_3',
@@ -168,7 +198,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -179,7 +214,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0}
+            { layer: 'Seoul', opacity: 0},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
                 ]
         },         
         {
@@ -207,7 +247,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
                 ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -218,7 +263,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 }            
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }            
             ]
         },
 // combine + chunk + no map        {
@@ -293,7 +343,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.1 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
              { layer: 'interview', opacity: 0 },  
@@ -304,7 +359,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.1 },
-            { layer: 'Seoul', opacity: 0 }              
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }              
             ]
         },
         {
@@ -338,7 +398,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.1 },
-            { layer: 'Seoul', opacity: 0 }     
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }     
             ],
             onChapterExit: [
                { layer: 'interview', opacity: 0 },  
@@ -349,7 +414,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0.8 },
             { layer: 'number-of-PWD', opacity: 0.1 },
-            { layer: 'Seoul', opacity: 0 }     
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }     
             ]
         },
         {
@@ -377,7 +447,11 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0.8 },
             { layer: 'number-of-PWD', opacity: 0.8 },
-            { layer: 'Seoul', opacity: 0 }             
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }             
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },             
@@ -388,7 +462,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.8 },
-            { layer: 'Seoul', opacity: 0.85 } 
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -416,7 +495,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.7 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 } 
+            { layer: 'Seoul', opacity: 0.85 } ,
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 },  
@@ -427,7 +511,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.7 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 } 
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
          {
@@ -455,7 +544,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.7 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.85 } 
+            { layer: 'Seoul', opacity: 0.85 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 }, 
@@ -466,7 +560,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -478,7 +577,7 @@ var config = {
             description: "Government's own map showing slope <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction.",
             location: {
             center: [126.91233, 37.60061],
-                zoom: 15.32,
+                zoom: 14.32,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -494,7 +593,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0.8 },
+            { layer: 'minor-roads-copy', opacity: 0.8 },
+            { layer: 'all-other-roads-copy', opacity: 0.8 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 }, 
@@ -505,7 +609,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0.8 },
+            { layer: 'minor-roads-copy', opacity: 0.8 },
+            { layer: 'all-other-roads-copy', opacity: 0.8 } 
             ]
         },
            
@@ -539,7 +648,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
            { layer: 'interview', opacity: 0 }, 
@@ -550,7 +664,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -578,7 +697,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.2 } 
+            { layer: 'Seoul', opacity: 0.2 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0.8 }, 
@@ -589,7 +713,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.2 } 
+            { layer: 'Seoul', opacity: 0.2 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
                 // same, opacity: 0
             ]
         },
@@ -618,7 +747,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.2} 
+            { layer: 'Seoul', opacity: 0.2},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
              { layer: 'interview', opacity: 0.8 }, 
@@ -629,7 +763,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.2 } 
+            { layer: 'Seoul', opacity: 0.2 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -659,7 +798,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.3 } 
+            { layer: 'Seoul', opacity: 0.3 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
              { layer: 'interview', opacity: 0 }, 
@@ -670,7 +814,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.3 } 
+            { layer: 'Seoul', opacity: 0.3 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -698,7 +847,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
                 //png to highlight the building
             ],
             onChapterExit: [
@@ -710,7 +864,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
                 //png to highlight the building
                 
             ]
@@ -741,10 +900,10 @@ var config = {
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Graph.png?raw=true',
             description: "We divided into <b> Walk/Roll, Subway and Paratransit taxi<b>. <p> According to data from Korea's Ministry of Land, Infrastructure, and Transport from last August, the transportation vulnerable in Seoul, including the people with disabilities, use the modes of transportation depicted in the graph above.<p>From this part, we will use the semi-structured interviews and go-along interviews materials.",
             location: {
-               center: [126.98155, 37.50045],
-                zoom: 11.99,
-                pitch: 49.48,
-                bearing: 0.00
+               center: [127.16920, 37.55083],
+               zoom: 17.00,
+               pitch: 60.00,
+               bearing: -52.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -758,7 +917,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.7 } 
+            { layer: 'Seoul', opacity: 0.7 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
             { layer: 'interview', opacity: 0 }, 
@@ -769,7 +933,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0.7 } 
+            { layer: 'Seoul', opacity: 0.7 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
         {
@@ -797,7 +966,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 } 
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 }, 
@@ -808,7 +982,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }]
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }]
         },
         {
             id: '6-identifier',
@@ -835,7 +1014,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -846,7 +1030,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ]
         },
         {
@@ -863,7 +1052,7 @@ var config = {
                 bearing: 0
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [
                 { layer: 'interview', opacity: 0 },
@@ -874,7 +1063,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -885,7 +1079,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ]
         },
         {
@@ -913,7 +1112,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity:  0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -924,7 +1128,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.8 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }]
+            { layer: 'Seoul', opacity:  0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }]
         },
         {
             id: '8-identifier',
@@ -951,7 +1160,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.8 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }            
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 1 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }            
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -962,7 +1176,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.8 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }   
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 1 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }   
             ]
         },
                 {
@@ -990,7 +1209,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.8 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }   
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 1 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }   
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1001,7 +1225,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }   
+            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
+            { layer: 'elevator-subway-copy', opacity: 1 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }   
             ]
         },
          {
@@ -1028,7 +1257,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1039,7 +1273,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
         {
@@ -1068,7 +1307,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1079,7 +1323,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
             
@@ -1108,7 +1357,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1119,7 +1373,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 }  
+            { layer: 'Seoul', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
          {
@@ -1147,7 +1406,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6 }  
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0.8 },
@@ -1158,7 +1422,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6 }  
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
         {
@@ -1186,7 +1455,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6 } 
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1197,7 +1471,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6 }  
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
               {
@@ -1225,7 +1504,11 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.9 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6}  
+            { layer: 'Seoul', opacity: 0.6},
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [ { layer: 'interview', opacity: 0 },
              { layer: 'jae-woo-test1', opacity: 0 },    
@@ -1235,7 +1518,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.9}  ]
+            { layer: 'Seoul', opacity: 0.9},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  ]
         },
             {
              id:'discussion-3',
@@ -1262,7 +1550,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0.5 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6}  
+            { layer: 'Seoul', opacity: 0.6},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
@@ -1273,7 +1566,12 @@ var config = {
             { layer: 'elevator-subway', opacity: 0},
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0.6}]
+            { layer: 'Seoul', opacity: 0.6},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }]
         },
         {
             id: 'conclusion-identifier',
@@ -1282,9 +1580,9 @@ var config = {
             title: 'Whats Next?',
             description: 'The government must conduct detailed qualitative study, not just quantitative research, on the transportation disadvantaged. Furthermore, these consideration must be included in the transportation evaluation measures established by the local administration. And, by actively fostering counter-mapping efforts like these, the government should reflect their views as well. Last but not least, because of these constraints, it is critical to investigate and develop more dependable and personalized alternatives for all types of disability.',
             location: {
-                center: [126.98720, 37.51853],
-                zoom: 9.94,
-                pitch: 37.00,
+                 center: [126.77232, 37.55733],
+                zoom: 9.52,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
@@ -1300,9 +1598,9 @@ var config = {
             title: 'Next research plan',
             description: 'We could tell there was a difference in perspective between the visually impaired and wheelchair users, and each favored mode of mobility and had slightly different opinions. We need to figure out how to display these elements with more mapping and have them reflect in the end output.',
             location: {
-                center: [126.98720, 37.51853],
-                zoom: 9.94,
-                pitch: 37.00,
+                 center: [126.77232, 37.55733],
+                zoom: 9.52,
+                pitch: 0.00,
                 bearing: 0.00
             },
             mapAnimation: 'flyTo',
