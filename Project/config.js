@@ -33,7 +33,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Seoul',
-            //image: 'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202210/28/1bb22db2-721e-46ba-bccd-dc2425cab5d1.jpg',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Seoul%20population.png?raw=true',
             description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
             location: {
                 center: [125.07462, 36.50732],
@@ -182,7 +182,7 @@ var config = {
             description: "Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population. On the other hand, those with the most population with disabilities show a deep blue as Nowon-gu and Gangseo-gu.",
             location: {
                  center: [126.77232, 37.55733],
-                zoom: 9.53,
+                zoom: 9.52,
                 pitch: 0.00,
                 bearing: 0.00
             },
