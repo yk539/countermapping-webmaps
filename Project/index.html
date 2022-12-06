@@ -182,6 +182,26 @@ var map = new mapboxgl.Map({
     transformRequest: transformRequest,
     projection: config.projection
 });
+// map.on('load', () => {
+// map.addSource('radar', {
+// 'type': 'image',
+// 'url': 'https://mblogthumb-phinf.pstatic.net/MjAyMjAyMTFfMjM0/MDAxNjQ0NTMxNDAwMDQ3.twEQALCo0lnEZaykMjpWuW_o0ZNUV0FEAOMRSC1giWwg.4LBsCkdWpS7jIqL35lT97_BNxT7pqgdZapcF4_6lzKgg.JPEG.tenzworks/18913.jpeg?type=w800',
+// 'coordinates': [
+// [126.91476, 37.60341],
+// [126.93252, 37.60341],
+// [126.93252, 37.59106],
+// [126.91476,  37.59106]
+// ]
+// });
+// map.addLayer({
+// id: 'radar-layer',
+// 'type': 'raster',
+// 'source': 'radar',
+// 'paint': {
+// 'raster-fade-duration': 0
+// }
+// });
+// });
 
 // Create a inset map if enabled in config.js
 if (config.inset) {
