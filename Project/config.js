@@ -33,7 +33,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Seoul',
-            image: 'http://res.heraldm.com/content/image/2022/05/04/20220504000702_0.jpg',
+            //image: 'https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202210/28/1bb22db2-721e-46ba-bccd-dc2425cab5d1.jpg',
             description: 'Seoul is the capital city of South Korea with high population density. About one fifth of the total population lives on 0.6% of the land.<p> This is the hub of socioeconomic development, and the city agglomeration was carried out in collaboration with the Gyeonggi-do and Incheon-si. As such, the transportation infrastructure is also very developed.',
             location: {
                 center: [125.07462, 36.50732],
