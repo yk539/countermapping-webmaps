@@ -182,7 +182,7 @@ var config = {
             description: "Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population. On the other hand, those with the most population with disabilities show a deep blue as Nowon-gu and Gangseo-gu.",
             location: {
                  center: [126.77232, 37.55733],
-                zoom: 9.52,
+                zoom: 9.49,
                 pitch: 0.00,
                 bearing: 0.00
             },
