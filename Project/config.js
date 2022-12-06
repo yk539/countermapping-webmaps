@@ -228,7 +228,7 @@ var config = {
             hidden: false,
             title: 'Why Seoul?',
             image:'https://cdn.gukjenews.com/news/photo/202211/2587479_2595809_80.jpg',
-            description: 'In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. Among the 25 districts in Seoul, Gangbuk-gu has the highest proportion of persons with disabilities over 2.5% of the total population.',
+            description: 'In 2004, the movement in the Seoul metropolitan area to abolish discrimination against people with disabilities related to the occupation of subways and buses was successful in installing elevators in 90% of the subways in the city. Yet, people with disabilities still do not have safe and stable access to bus, taxi, and subway platforms. Many disabled people groups have consistently raised their voices on this issue, but in reality, little has changed, and protests started again in December 2021. Throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination,SADD, has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. ',
             location: {
                  center: [126.77232, 37.55733],
                 zoom: 9.52,
@@ -927,7 +927,7 @@ var config = {
             onChapterExit: [
             { layer: 'interview', opacity: 0 }, 
                 { layer: 'jae-woo-test1', opacity: 0 },    
-            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'min-ho-test1', opacity: 0.4 },
             { layer: 'mi-young-test1', opacity: 0 },
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
