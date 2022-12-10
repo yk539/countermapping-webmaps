@@ -446,7 +446,7 @@ var config = {
             image: 'images/Picture2.jpg',
             description1: 'Before we dig into the disability accessbility, When the shortest distance to the entrance of the subway station was summarized, Seocho-gu and Gangnam-gu in black line, the districts with a lower number of persons with disabilities than the average in Seoul, showed the smallest distance. The overall transportation accessibility of districts with a relatively high number of disabled people is not good. As such, urban transportation infrastructure such as subway stations is not distributed throughout, and accessibility is so different.',
             image1: 'http://www.kpaj.or.kr/xml/04549/KPA_2014_v50n4_69_f005.jpg',
-            description2: " ( http://www.kpaj.or.kr/_PR/view/?aidx=4549&bidx=362#!po=55.0000, ",
+            description2: " (http://www.kpaj.or.kr/_PR/view/?aidx=4549&bidx=362#!po=55.0000), ",
             location: {
                 center: [126.87411, 37.56492],
                 zoom: 9.96,
@@ -903,7 +903,7 @@ var config = {
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
-            { layer: 'moility-instructor', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0.8 },
             { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
@@ -942,7 +942,7 @@ var config = {
                 //png to highlight the building
             ],
             onChapterExit: [
-            { layer: 'interview', opacity: 0 }, 
+             { layer: 'interview', opacity: 0 }, 
                 { layer: 'jae-woo-test1', opacity: 0 },    
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
@@ -955,7 +955,7 @@ var config = {
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
-            { layer: 'moility-instructor', opacity: 0.8 },
+            { layer: 'moility-instructor', opacity: 0.9 },
             { layer: 'all-other-roads-copy', opacity: 0 } 
                 //png to highlight the building
                 

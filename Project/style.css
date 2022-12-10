@@ -207,7 +207,7 @@
 
         #interlude p{
             font-size: 1.8vh;
-            text-align: justify;
+            text-align: center;
             margin-left: vw;
             margin-right: vw;
             background-color: : white;
@@ -215,9 +215,11 @@
             font-family: 'Titillium Web', sans-serif;
         }
         #interlude_2 {
-            width: 100vw;
+            width: 80vw;
             height: auto;
         }
+         #interlude_2 p{
+         }
         #interlude_2 img {
             align-items: center;
              width: 30vw;
