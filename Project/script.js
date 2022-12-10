@@ -81,9 +81,14 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(title);
     }
 
-    if (record.image) {
+     if (record.image) {
         var image = new Image();
         image.src = record.image;
+        chapter.appendChild(image);
+    }
+    if (record.image1) {
+        var image = new Image();
+        image.src = record.image1;
         chapter.appendChild(image);
     }
 
@@ -91,6 +96,23 @@ config.chapters.forEach((record, idx) => {
         var story = document.createElement('p');
         story.innerHTML = record.description;
         chapter.appendChild(story);
+    }
+    if (record.image2) {
+        var image = new Image();
+        image.src = record.image2;
+        chapter.appendChild(image);
+    }
+
+    if (record.description1) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description1;
+        chapter.appendChild(story);
+        
+    if (record.description2) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description2;
+        chapter.appendChild(story);
+        }    
     }
     if (record.video) {
     var videoDiv = document.createElement('div');

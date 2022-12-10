@@ -54,7 +54,7 @@
             height: auto;
         }
         #Chapter1_3 img{
-             width: 50%;
+             width: 65%;
             height: auto;
         }
         #Chapter1_0 img{
@@ -65,10 +65,10 @@
             height: 40vh;
             width: 30vw;
         }
+
         #Chapter1_10 {
-            text-align: center;
-            width:25vw;
-            position: center;
+            text-align: justify;
+            width:30vw;
             z-index: 5;
             height: auto;
             
@@ -151,6 +151,16 @@
             font-family: 'Titillium Web', sans-serif;
         }
 
+        #header p{
+            font-size: 2vh;
+            text-align: justify;
+            margin-left: 30vw;
+            margin-right: 30vw;
+            color: black;
+            Font-weight:400;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
         #footer {
             width: 100%;
             min-height: 5vh;
@@ -177,6 +187,7 @@
         text-align: left;
         max-width: 50vw;
         }
+
          #features p{
             font-size: 1.8vh;
             text-align: justify;
@@ -193,8 +204,9 @@
             height: 30vh;
         }
 
+
         #interlude p{
-            font-size: 1.2vh;
+            font-size: 1.8vh;
             text-align: justify;
             margin-left: vw;
             margin-right: vw;
