@@ -9,6 +9,7 @@ var config = {
     use3dTerrain: true, //set true for enabling 3D maps.
     title: 'Revealing the invisible challenges of pedestrians with disability',
     para1: "Since December 2021, throughout the Seoul metropolitan area, Solidarity Against Disability Discrimination (SADD) has been holding protests at subway stations to increase awareness of the mobility rights of people with disabilities. The Seoul metropolitan area, covering 12.6 percent of the Republic of Korea's land area, is home to 50.25 percent of the country’s population. People with disabilities are increasingly seen as particularly vulnerable pedestrians in this area, according to statistics. Being among the most vulnerable pedestrians, this study focused on the rights to mobility for those with disabilities. It investigated at the circumstances under which they might lead a stable and safe life in the urban area. Twenty people with disabilities participated in semi-structured in-depth interviews for qualitative research in order to conduct a current situation assessment and learn directly about the challenges of the most vulnerable pedestrians in the Seoul metropolitan area.",
+    para2: "Also, many links are in Korean rather than English, so please enable Chrome's automatic translation feature. Thank you in advance for your understanding.",
     subtitle: 'Focusing on Seoul, the Republic of Korea',
     byline: 'By Yeon Joo Kang and Duxixi(Ada) Shen',
     footer: 'Source: Oh, Y.-J., & Yun, K.-S. (2012). Urban Planning Factors for Socially Underprivileged Groups- Focused on the Urban Planning Code in the National Land Planning and Use Act. Journal of the Urban Design Institute of Korea, 13(4), 51–64. DBPIA.<p>Seoul  Amenities for People with Disabilities Statistics. (2022, April 11). <p>Seoul Government. (2022, July 20). Status of Disabled Persons in Seoul (By Type/Neighborhood) Statistics. <p>Seoul launches 3D map “S-Map” mobile version... Lost cultural assets and tourist attractions in VR: Smart City Comprehensive Portal. (2021, October 27). SMART CITY KOREA',
@@ -354,7 +355,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.1 },
-            { layer: 'Seoul', opacity: 0.4 },
+            { layer: 'Seoul', opacity: 0.2 },
             { layer: 'mapbox-satellite-copy', opacity: 1 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
@@ -412,7 +413,7 @@ var config = {
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0.1 },
             { layer: 'Seoul', opacity: 0.4 },
-            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 1 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
@@ -429,7 +430,7 @@ var config = {
             { layer: 'two-districts', opacity: 0.8 },
             { layer: 'number-of-PWD', opacity: 0.6 },
             { layer: 'Seoul', opacity: 0.4 },
-            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'mapbox-satellite-copy', opacity: 0.8 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
@@ -443,7 +444,7 @@ var config = {
             hidden: false,
             title: 'Public Transportation Accessibility',
             image: 'images/Picture2.jpg',
-            description1: 'Before we dig into the disability accessbility, When the shortest distance to the entrance of the subway station was summarized, Seocho-gu and Gangnam-gu in black line, the districts with a significantly lower ratio of persons with disabilities than the average in Seoul, showed the smallest distance. The overall transportation accessibility of districts with a relatively high number of disabled people is not good. As such, urban transportation infrastructure such as subway stations is not distributed throughout, and accessibility is so different.',
+            description1: 'Before we dig into the disability accessbility, When the shortest distance to the entrance of the subway station was summarized, Seocho-gu and Gangnam-gu in black line, the districts with a lower number of persons with disabilities than the average in Seoul, showed the smallest distance. The overall transportation accessibility of districts with a relatively high number of disabled people is not good. As such, urban transportation infrastructure such as subway stations is not distributed throughout, and accessibility is so different.',
             image1: 'http://www.kpaj.or.kr/xml/04549/KPA_2014_v50n4_69_f005.jpg',
             description2: " ( http://www.kpaj.or.kr/_PR/view/?aidx=4549&bidx=362#!po=55.0000, ",
             location: {
@@ -588,7 +589,7 @@ var config = {
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
             { layer: 'moility-instructor', opacity: 0 },
-            { layer: 'all-other-roads-copy', opacity: 0 } 
+            { layer: 'all-other-roads-copy', opacity: 0.8 } 
             ]
         },
         {
@@ -639,7 +640,7 @@ var config = {
             { layer: 'major-roads-copy', opacity: 0.8 },
             { layer: 'minor-roads-copy', opacity: 0.8 },
             { layer: 'moility-instructor', opacity: 0 },
-            { layer: 'all-other-roads-copy', opacity: 0.8 } 
+            { layer: 'all-other-roads-copy', opacity: 0 } 
             ]
         },
            
@@ -963,8 +964,9 @@ var config = {
         {
             id: '5-1-identifier',
             alignment: 'cneter',
+            title :'Why do people with disabilities must plan?',
             hidden: false,
-            description1: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
+            description1: 'Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
             //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
            location: {
            center: [126.87411, 37.56492],
@@ -1374,6 +1376,7 @@ var config = {
             hidden: false,
             title: 'Paratransit taxi',
             description1: ' Currently we have three different types of paratransit taxis. One for wheelchair users and two for other types but mostly for riders with visually impairment. Eventhough they would like to take usual taxis sometimes, some drivers refused to take them. Also, the Reason why they choose this paratransit taxi or cab system is safety. Not only on the car but also before and after, driver tends to guide them to the entrance and exit of the location on foot. But, there are some incidents of overcharging according to few participants. Consequently, they must pay attention to the real-time location data from apps when using earphones.',
+            image1: "https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/Picture1.png?raw=true",
             location: {
                center: [126.93316, 37.58357],
                 zoom: 15.18,
@@ -1624,6 +1627,58 @@ var config = {
             { layer: 'all-other-roads-copy', opacity: 0 }  
             ]
         },
+        {
+            id: 'discussion-1',
+            alignment: 'center',
+            hidden: false,
+            title: 'Counter Mappings',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/gov.map.png?raw=true',
+            description1: '<a href="https://map.seoul.go.kr/smgis2/short/6N257">Seoul Citizen Map </a> The city of Seoul has been encouraging individuals to provide a lot of information in recent years by introducing a citizen participation map to the map website. As a result, in order to exchange knowledge, residents have recently created maps for numerous socially disadvantaged groups, such as the walking and transit vulnerable communities, and children s protective zones. The preceding example examines the accessibility of government buildings such as the Dong(Neighborhood) Office and the Citizens Office. However, we must consider if this, which has the features of being handled by the official website, can be considered truly counter mapping.',
+            location: {
+              center: [126.98720, 37.51853],
+                zoom: 9.94,
+                pitch: 37.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                { layer: 'interview', opacity: 0 },
+            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
+            ],
+            onChapterExit: [
+                { layer: 'interview', opacity: 0 },
+             { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.6 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 }  
+            ]
+        },
+
               {
              id:'discussion-2',
             alignment: 'center',
@@ -1677,8 +1732,9 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Counter mapping',
-             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/muui-2.jpg?raw=true',
-            description1: "<b> Muui Transfer Map </b> <p> The first is a 'Muui' transfer and tour map. They illustrate the most efficient approach to transfer and travel between stations. People with and without mobility disabilities collaborate to report and write down findings from the monitoring stage.(https://www.wearemuui.com/265051462286-1) </p>",
+             image1: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/muui-2.jpg?raw=true',
+            description1: '<b> Muui Transfer Map </b> <p> The first is a <a href="https://www.wearemuui.com/kr/specialproject"> Muui transfer and tour map</a>. The image above depicts how to transfer within the station at the site. They illustrate the most efficient approach to transfer and travel between stations. People with and without mobility disabilities collaborate to report and write down findings from the monitoring stage.</p>',
+            image2: "",
             location: {
               center: [127.03943, 37.56182],
                 zoom: 18.07,
@@ -1744,8 +1800,8 @@ var config = {
             id: 'limitation-identifier',
             alignment: 'center',
             hidden: false,
-            title: 'Next research plan',
-            description1: 'We could tell there was a difference in perspective between the visually impaired and wheelchair users, and each favored mode of mobility and had slightly different opinions. We need to figure out how to display these elements with more mapping and have them reflect in the end output.',
+            title: 'Limitation',
+            description1: "Based on the findings of continuing research, it may not be flawless. However, it was discovered that there is a difference in perspective between the person with visual impairement and wheelchair users, and that each prefers a different mode of travel and has slightly different opinions. We'll need to figure out how to present these pieces with more mapping and have them reflect in the desired outcome.",
             location: {
                  center: [126.77232, 37.55733],
                 zoom: 9.52,

@@ -64,6 +64,11 @@ if (config.para1) {
     bylineText.innerText = config.para1;
     header.appendChild(bylineText);
 }
+if (config.para2) {
+    var bylineText = document.createElement('p');
+    bylineText.innerText = config.para2;
+    header.appendChild(bylineText);
+}
 
 if (header.innerText.length > 0) {
     header.classList.add(config.theme);
@@ -107,7 +112,7 @@ config.chapters.forEach((record, idx) => {
         var story = document.createElement('p');
         story.innerHTML = record.description1;
         chapter.appendChild(story);
-        
+
     if (record.description2) {
         var story = document.createElement('p');
         story.innerHTML = record.description2;
