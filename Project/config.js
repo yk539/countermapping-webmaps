@@ -751,7 +751,57 @@ var config = {
                 // same, opacity: 0
             ]
         },
-        
+        {
+            id: 'Chapter2_0_1',
+            alignment: 'center',
+            hidden: false,
+            title: 'Findings',
+            image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/plan.png?raw=true',
+            description1: " We analyzed the interview information and were able to divide it into phases, Planning a trip | On a trip | Future travel",
+            location: {
+                 center: [126.87411, 37.56492],
+                zoom: 9.96,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+             { layer: 'interview', opacity: 0.8 }, 
+                { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.2},
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
+            ],
+            onChapterExit: [
+             { layer: 'interview', opacity: 0.8 }, 
+                { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.2 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
+            ]
+        },
         {
             id: 'Chapter2-1',
             alignment: 'center',
@@ -805,7 +855,7 @@ var config = {
         },
         {
             id: 'Chapter2-4',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             //title: 'Planning a trip',
             image : 'https://img.freepik.com/premium-vector/disabled-people-community-service-vector-illustration-flat-people-character-help-each-other-talk-support-together-man-with-leg-prosthesis_109722-3216.jpg',
@@ -861,7 +911,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             //title: 'Planning a trip',
-            description1: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center. The majority of participants with visual impairments have engaged with this Sang-il-dong local welfare centers because they provide these services.',
+            description1: '<b> Source of Travel Information<b> <p> Mobility Instructor <P> A walking instructor is also used by those who walk alone or where walking is vital. They inspect the new environment with freshman students or persons who have begun working and moved to other areas, informing them of potentially dangerous spots like drains in the picture. This is provided by some local welfare center. The majority of participants with visual impairments have engaged with this Sang-il-dong local welfare centers because they provide these services. There are, however, surprisingly few locations that provide this service as green locations.',
             image : 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/mobilityindtructor.jpg?raw=true',
             location: {
                 center: [126.87411, 37.56492],
@@ -880,13 +930,13 @@ var config = {
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.4 },
+            { layer: 'Seoul', opacity: 0.3 },
             { layer: 'mapbox-satellite-copy', opacity: 0 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
             { layer: 'minor-roads-copy', opacity: 0 },
-            { layer: 'moility-instructor', opacity: 0.8 },
+            { layer: 'moility-instructor', opacity: 0.9 },
             { layer: 'all-other-roads-copy', opacity: 0 } 
                 //png to highlight the building
             ],
@@ -898,8 +948,8 @@ var config = {
             { layer: 'iso-elvt-merged', opacity: 0 },
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
-            { layer: 'number-of-PWD', opacity: 0.7 },
-            { layer: 'Seoul', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.4 },
+            { layer: 'Seoul', opacity: 0.3 },
             { layer: 'mapbox-satellite-copy', opacity: 0 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
@@ -910,24 +960,59 @@ var config = {
                 
             ]
         },
-//         {
-//             id: '5-1-identifier',
-//             alignment: 'left',
-//             hidden: false,
-//             description1: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
-//             //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
-//            location: {
-//            center: [126.981090, 37.52394],
-//            zoom: 12.52,
-//            pitch: 60.50,
-//            bearing: 0.00
-//        },
-//             mapAnimation: 'flyTo',
-//             rotateAnimation: false,
-//             callback: '',
-//             onChapterEnter: [],
-//             onChapterExit: []
-//         },
+        {
+            id: '5-1-identifier',
+            alignment: 'cneter',
+            hidden: false,
+            description1: '<b>Why do people with disabilities must plan<b> <p> Barriers : Uncertainty, Safety issues <P> Lack of resources :  Information, Networks, Economic <p>But what if they have problems getting this information? For example. The older people with disabilities get, the more difficult it is to participate in these networks and to use maps or other tools. As the proportion of those aged 65 and over among registered disabled people is rapidly increasing, this problem is urgent In the planning trips process, there are so many considerations concerning unpredictability and safety, as well as so many other restrictions# that they frequently become increasingly isolated.',
+            //image : 'http://www.hsb.or.kr/up_fd/photo/31/org/201313011213918876.jpg',
+           location: {
+           center: [126.87411, 37.56492],
+                zoom: 9.96,
+                pitch: 0.00,
+                bearing: 0.00
+       },
+                      mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+             { layer: 'interview', opacity: 0 }, 
+                { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.4 },
+            { layer: 'Seoul', opacity: 0.3 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0.9 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
+                //png to highlight the building
+            ],
+            onChapterExit: [
+            { layer: 'interview', opacity: 0 }, 
+                { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'min-ho-test1', opacity: 0 },
+            { layer: 'mi-young-test1', opacity: 0 },
+            { layer: 'iso-elvt-merged', opacity: 0 },
+            { layer: 'elevator-subway', opacity: 0 },
+            { layer: 'two-districts', opacity: 0 },
+            { layer: 'number-of-PWD', opacity: 0.4 },
+            { layer: 'Seoul', opacity: 0.3 },
+            { layer: 'mapbox-satellite-copy', opacity: 0 },
+            { layer: 'elevator-subway-copy', opacity: 0 },
+            { layer: 'major-roads-copy', opacity: 0 },
+            { layer: 'minor-roads-copy', opacity: 0 },
+            { layer: 'moility-instructor', opacity: 0.8 },
+            { layer: 'all-other-roads-copy', opacity: 0 } 
+                //png to highlight the building
+                
+            ]
+        },
         {
             id: 'identifier-5-2',
             alignment: 'center',
@@ -1238,7 +1323,7 @@ var config = {
             hidden: false,
             //title: 'Mi-Young, 53',
             video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-my2.mp4?raw=true',
-            description1: 'She mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station. Even she points out using the lift in subway is uncomfortable because it makes very loud sound or extremally dangerous. There are several cases about the accidents (https://youtu.be/3QhlZcUmNQs).',
+            description1: 'She mentioned that the subway elevators were always full with people without disability and lift was not functioning very well in the subway station. Even she points out using the lift in subway is uncomfortable because it makes very loud sound or extremally dangerous. There are <a href="https://youtu.be/3QhlZcUmNQs"> several cases</a> about the accidents .',
             location: {
               center: [126.92288, 37.50216],
               zoom: 14.33,

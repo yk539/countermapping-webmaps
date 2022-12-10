@@ -218,6 +218,11 @@
             width: 100vw;
             height: auto;
         }
+        #interlude_2 img {
+            align-items: center;
+             width: 30vw;
+            height: auto;
+        }
 
         video {
             margin-left: 3vw;
