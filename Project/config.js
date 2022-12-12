@@ -1072,7 +1072,7 @@ var config = {
             hidden: false,
             title: 'Minho, 30 ',
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/IMG_1917.JPG?raw=true',
-            description1: 'Minho, is visually impaired and this route was his way home from work. He is using the cane but needs accompany who can guide him for the right direction. I walked from the subway station to the house. The same route, map says takes 9 mins but we spent our time walking 15mins',
+            description1: 'Minho, is visually impaired and this route was his way home from work. He is using the cane but needs accompany who can guide him for the right direction. I walked from the subway station to the house. The same route, map says takes 9 mins but we spent our time walking 15mins. Route of Minho is <a href="https://adasdxxat.github.io/countermapping-webmaps/MIN-HO/index.html">here</a>',
             location: {
                center: [126.96331, 37.57973],
                 zoom: 14.29,
@@ -1224,7 +1224,7 @@ var config = {
             hidden: false,
             title: 'Mi-Young, 53',
             video: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/video-my3.mp4?raw=true',
-            description1: 'Mi-young rides the subway in an electric wheelchair. Her commute is usually consisted of <b> Rolling, Taking Elevator, and Taking Subway</b> She says even the vollard in the sidewalk is sometimes annyoing to avoid. The electric wheelchair may be seen being rocked by urban structures such as braille blocks.',
+            description1: 'Mi-young rides the subway in an electric wheelchair. Her commute is usually consisted of <b> Rolling, Taking Elevator, and Taking Subway</b> She says even the vollard in the sidewalk is sometimes annyoing to avoid. The electric wheelchair may be seen being rocked by urban structures such as braille blocks. Route of Mi-Young is <a href="https://adasdxxat.github.io/countermapping-webmaps/MI-YOUNG/index.html">here</a>',
             location: {
               center: [126.96965, 37.52132],
                 zoom: 12.39,
@@ -1428,7 +1428,7 @@ var config = {
             title: 'Jae-Woo, 24',
             image: 'https://github.com/yk539/countermapping-webmaps/blob/main/Project/images/paratransit.jpg?raw=true',
                 //memo - upload photos
-            description1: 'Jaewoo has visual impairments but he was accompanied by his guide dog. He was on his way to work using paratransit taxi.',
+            description1: 'Jaewoo has visual impairments but he was accompanied by his guide dog. He was on his way to work using paratransit taxi.Route of Jae-Woo is <a href="https://adasdxxat.github.io/countermapping-webmaps/JAE-WOO/index.html">here</a>',
             location: {
                 center: [126.93316, 37.58357],
                 zoom: 15.18,
@@ -1508,7 +1508,7 @@ var config = {
             { layer: 'all-other-roads-copy', opacity: 0 }  
             ],
             onChapterExit: [
-                { layer: 'interview', opacity: 0 },
+                { layer: 'interview', opacity: 0.6 },
             { layer: 'jae-woo-test1', opacity: 0 },    
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
