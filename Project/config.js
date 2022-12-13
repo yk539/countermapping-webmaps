@@ -640,7 +640,7 @@ var config = {
             { layer: 'major-roads-copy', opacity: 0.8 },
             { layer: 'minor-roads-copy', opacity: 0.8 },
             { layer: 'moility-instructor', opacity: 0 },
-            { layer: 'all-other-roads-copy', opacity: 0 } 
+            { layer: 'all-other-roads-copy', opacity: 0.8 } 
             ]
         },
            
@@ -1405,7 +1405,7 @@ var config = {
             ],
             onChapterExit: [
                 { layer: 'interview', opacity: 0 },
-            { layer: 'jae-woo-test1', opacity: 0 },    
+            { layer: 'jae-woo-test1', opacity: 0.8 },    
             { layer: 'min-ho-test1', opacity: 0 },
             { layer: 'mi-young-test1', opacity: 0 },
             { layer: 'iso-elvt-merged', opacity: 0 },
@@ -1516,7 +1516,7 @@ var config = {
             { layer: 'elevator-subway', opacity: 0 },
             { layer: 'two-districts', opacity: 0 },
             { layer: 'number-of-PWD', opacity: 0 },
-            { layer: 'Seoul', opacity: 0 },
+            { layer: 'Seoul', opacity: 0.5 },
             { layer: 'mapbox-satellite-copy', opacity: 0 },
             { layer: 'elevator-subway-copy', opacity: 0 },
             { layer: 'major-roads-copy', opacity: 0 },
