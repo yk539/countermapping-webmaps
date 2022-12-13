@@ -637,10 +637,10 @@ var config = {
             { layer: 'Seoul', opacity: 0 },
             { layer: 'mapbox-satellite-copy', opacity: 0 },
             { layer: 'elevator-subway-copy', opacity: 0 },
-            { layer: 'major-roads-copy', opacity: 0.8 },
-            { layer: 'minor-roads-copy', opacity: 0.8 },
+            { layer: 'major-roads-copy', opacity: 0.2 },
+            { layer: 'minor-roads-copy', opacity: 0.2 },
             { layer: 'moility-instructor', opacity: 0 },
-            { layer: 'all-other-roads-copy', opacity: 0.8 } 
+            { layer: 'all-other-roads-copy', opacity: 0.8} 
             ]
         },
            
