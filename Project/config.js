@@ -598,7 +598,7 @@ var config = {
             hidden: false,
            title: 'Local governments Trials to improve mobility rights',
             image: 'https://image.news1.kr/system/photos/2019/8/20/3783358/article.jpg/dims/optimize',
-            description1: "(Government's own map showing slope) <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction. It differs from general maps in that it only shows arterial roads and collecting roads, which are road levels.",
+            description1: "(Government's own map showing slope) <p> Eunpyeong-gu, Seoul, is the first municipality in the country to generate a pedestrian safety road name address guide and web that includes slope information for each road section in order to support safe movement routes for the transportation vulnerable by using data constructed with land slope information at 10m intervals across all road sections within the jurisdiction. It differs from general maps in that it only shows arterial roads from background and collecting roads, which are road levels.",
             location: {
             center: [126.91895, 37.59976],
                 zoom: 15.44,
@@ -651,7 +651,7 @@ var config = {
             title: 'Research Direction',
             description1: "<b>Question</b><p>• What challenges do pedestrians with disabilities encounter that aren't depicted on the current maps? <p> • What distinctive difficulties do various categories of people with disabilities face?<p><b>Methodology: Qualitative approaches</b><p> Participant observation, interviews, and news analysis <p>First-hand information was collected through participant observation of PWD’s daily lives in Seoul, and interviews with the disability communities. Accordingly, we will use their footage that has already been featured in the news or other media in a manner that preserves their copyright. We want to supplement the missing information in the data-oriented mapping process, especially the invisible challenges of vulnerable pedestrians which cannot be presented by data.</p>",
             location: {
-                center: [126.91233, 37.60061],
+                center: [126.91233, 37.600610],
                 zoom: 14.32,
                 pitch: 0.00,
                 bearing: 0.00
